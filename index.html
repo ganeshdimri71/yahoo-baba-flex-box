@@ -15,119 +15,144 @@
             display: flex;
         }
         #row{
+            width: 400px;
             height: 300px;
-            align-items: stretch;
+            flex-wrap: wrap;
+            align-content: stretch;
         }
         #row-reverse{
+              width: 400px;
             height: 300px;
-            align-items: flex-start;
+            flex-wrap: wrap;
+            align-content: flex-start;
         }
         #column{
+             width: 400px;
             height: 300px;
-            align-items: flex-end;
+            flex-wrap: wrap;
+            align-content: flex-end;
         }
         #column-reverse{
+             width: 400px;
             height: 300px;
-            align-items: center;
+            flex-wrap: wrap;
+            align-content: center;
         }
         #wrap-reverse{
-              height: 300px;
-                 align-items: baseline;
+             width: 400px;
+            height: 300px;
+            flex-wrap: wrap;
+            align-content: space-around;
         }
         #wrap-reverse-row{
-              height: 300px;
-               align-items: baseline;
-            justify-content: center;
+             width: 400px;
+            height: 300px;
+            flex-wrap: wrap;
+            align-content: space-between;
         }
         #flex-flow{
-            flex-direction: column;
-                height: 300px;
-               align-items: flex-end;
-            justify-content: center;
-        }
-         #flex-column-ac-c{
-                flex-direction: column;
-                height: 300px;
-               align-items: center;
-            justify-content: center;
+          width: 400px;
+            height: 300px;
+            flex-wrap: wrap;
+            align-content: space-evenly;
         }
         .item1{ background-color: orangered;}
         .item2{background-color: yellowgreen;}
         .item3{background-color: mediumpurple;}
         .item4{ background-color: hotpink;}
-        .items{color: #fff;font-size: 20px;font-weight: bold;padding: 10px;margin: 0;}
+        .items{color: #fff;font-size: 20px;font-weight: bold;padding: 10px;margin: 5px;}
     </style>
 </head>
 <body>
-    <h1>Flexbox Default Align-Items-Stretch</h1>
+    <h1>Flexbox Default Align-Content-Stretch</h1>
 
     <div id="row" class="container">
         <div class="items item1">One</div>
         <div class="items item2">Two</div>
         <div class="items item3">Three</div>
         <div class="items item4">Four</div>
+        <div class="items item1">Five</div>
+        <div class="items item2">Six</div>
+        <div class="items item3">Seven</div>
+        <div class="items item4">Eight</div>
     </div>
 
-    <h1>Flexbox Align-Items-Start</h1>
+    <h1>Flexbox Align-Content-Start</h1>
 
     <div id="row-reverse" class="container">
          <div class="items item1">One</div>
         <div class="items item2">Two</div>
         <div class="items item3">Three</div>
         <div class="items item4">Four</div>
+        <div class="items item1">Five</div>
+        <div class="items item2">Six</div>
+        <div class="items item3">Seven</div>
+        <div class="items item4">Eight</div>
     </div>
 
-    <h1>Flexbox Align-Items-End</h1>
+    <h1>Flexbox Align-Content-End</h1>
 
     <div id="column" class="container">
         <div class="items item1">One</div>
         <div class="items item2">Two</div>
         <div class="items item3">Three</div>
         <div class="items item4">Four</div>
+        <div class="items item1">Five</div>
+        <div class="items item2">Six</div>
+        <div class="items item3">Seven</div>
+        <div class="items item4">Eight</div>
     </div>
 
-    <h1>Flexbox Align-Items-Center</h1>
+    <h1>Flexbox Align-Content-Center</h1>
 
     <div id="column-reverse" class="container">
        <div class="items item1">One</div>
-        <div id="align-item-center" class="items item2">Two</div>
+        <div class="items item2">Two</div>
         <div class="items item3">Three</div>
         <div class="items item4">Four</div>
+        <div class="items item1">Five</div>
+        <div class="items item2">Six</div>
+        <div class="items item3">Seven</div>
+        <div class="items item4">Eight</div>
     </div>
 
-    <h1>Flexbox Align-Items-Baseline</h1>
+    <h1>Flexbox Align-Content-Space-Around</h1>
 
     <div id="wrap-reverse" class="container">
         <div class="items item1">One</div>
-        <div style="height: 100px; font-size:100px" class="items item2">Two</div>
+        <div class="items item2">Two</div>
         <div class="items item3">Three</div>
-        <div style="font-size: 11px;" class="items item4">Four</div>
+        <div class="items item4">Four</div>
+             <div class="items item1">Five</div>
+        <div class="items item2">Six</div>
+        <div class="items item3">Seven</div>
+        <div class="items item4">Eight</div>
     </div>
 
-     <h1>Flexbox Align-Items-Baseline JC-Center</h1>
+     <h1>Flexbox Align-Content-Space-Between</h1>
 
     <div id="wrap-reverse-row" class="container">
-         <div class="items item1">One</div>
-        <div style="height: 100px; font-size:100px" class="items item2">Two</div>
+        <div class="items item1">One</div>
+        <div class="items item2">Two</div>
         <div class="items item3">Three</div>
-        <div style="font-size: 11px;" class="items item4">Four</div>
+        <div class="items item4">Four</div>
+             <div class="items item1">Five</div>
+        <div class="items item2">Six</div>
+        <div class="items item3">Seven</div>
+        <div class="items item4">Eight</div>
     </div>
 
-    <h1>Flexbox flex-d-column JC-Center align-items-end</h1>
+    <h1>Flexbox Align-Content-Space-Evenly</h1>
 
     <div id="flex-flow" class="container">
         <div class="items item1">One</div>
-        <div style="height: 100px; font-size:100px" class="items item2">Two</div>
+        <div class="items item2">Two</div>
         <div class="items item3">Three</div>
-        <div style="font-size: 11px;" class="items item4">Four</div>
-    </div>
-    <h1>Flexbox flex-d-column JC-Center align-items-center</h1>
-
-    <div id="flex-column-ac-c" class="container">
-        <div class="items item1">One</div>
-        <div style="height: 100px; font-size:100px" class="items item2">Two</div>
-        <div class="items item3">Three</div>
-        <div style="font-size: 11px;" class="items item4">Four</div>
+        <div class="items item4">Four</div>
+        <div class="items item1">five</div>
+        <div class="items item2">Six</div>
+        <div class="items item3">Seven</div>
+        <div class="items item4">Eight</div>
     </div>
 </body>
 </html>
