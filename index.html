@@ -15,26 +15,41 @@
             display: flex;
         }
         #row{
-            justify-content: center;
+            height: 300px;
+            align-items: stretch;
         }
         #row-reverse{
-           justify-content: flex-end;
+            height: 300px;
+            align-items: flex-start;
         }
         #column{
-            justify-content: flex-start;
+            height: 300px;
+            align-items: flex-end;
         }
         #column-reverse{
-            justify-content: space-between;
+            height: 300px;
+            align-items: center;
         }
         #wrap-reverse{
-               justify-content: space-around;
+              height: 300px;
+                 align-items: baseline;
         }
         #wrap-reverse-row{
-            justify-content: space-evenly;
+              height: 300px;
+               align-items: baseline;
+            justify-content: center;
         }
         #flex-flow{
-            height: 200px;
-            flex-flow: column wrap;
+            flex-direction: column;
+                height: 300px;
+               align-items: flex-end;
+            justify-content: center;
+        }
+         #flex-column-ac-c{
+                flex-direction: column;
+                height: 300px;
+               align-items: center;
+            justify-content: center;
         }
         .item1{ background-color: orangered;}
         .item2{background-color: yellowgreen;}
@@ -44,7 +59,7 @@
     </style>
 </head>
 <body>
-    <h1>Flexbox Justify-Content-Center</h1>
+    <h1>Flexbox Default Align-Items-Stretch</h1>
 
     <div id="row" class="container">
         <div class="items item1">One</div>
@@ -53,7 +68,7 @@
         <div class="items item4">Four</div>
     </div>
 
-    <h1>Flexbox Justify-Content-End</h1>
+    <h1>Flexbox Align-Items-Start</h1>
 
     <div id="row-reverse" class="container">
          <div class="items item1">One</div>
@@ -62,7 +77,7 @@
         <div class="items item4">Four</div>
     </div>
 
-    <h1>Flexbox Justify-Content-Start Default</h1>
+    <h1>Flexbox Align-Items-End</h1>
 
     <div id="column" class="container">
         <div class="items item1">One</div>
@@ -71,48 +86,48 @@
         <div class="items item4">Four</div>
     </div>
 
-    <h1>Flexbox Justify-Content-Space-Between</h1>
+    <h1>Flexbox Align-Items-Center</h1>
 
     <div id="column-reverse" class="container">
        <div class="items item1">One</div>
-        <div class="items item2">Two</div>
+        <div id="align-item-center" class="items item2">Two</div>
         <div class="items item3">Three</div>
         <div class="items item4">Four</div>
     </div>
 
-    <h1>Flexbox Justify-Content-Space-Around</h1>
+    <h1>Flexbox Align-Items-Baseline</h1>
 
     <div id="wrap-reverse" class="container">
         <div class="items item1">One</div>
-        <div class="items item2">Two</div>
+        <div style="height: 100px; font-size:100px" class="items item2">Two</div>
         <div class="items item3">Three</div>
-        <div class="items item4">Four</div>
+        <div style="font-size: 11px;" class="items item4">Four</div>
     </div>
 
-     <h1>Flexbox Justify-Content-Space-Evenly</h1>
+     <h1>Flexbox Align-Items-Baseline JC-Center</h1>
 
     <div id="wrap-reverse-row" class="container">
-        <div class="items item1">One</div>
-        <div class="items item2">Two</div>
+         <div class="items item1">One</div>
+        <div style="height: 100px; font-size:100px" class="items item2">Two</div>
         <div class="items item3">Three</div>
-        <div class="items item4">Four</div>
-        <div class="items item1">five</div>
-        <div class="items item2">Six</div>
-        <div class="items item3">Seven</div>
-        <div class="items item4">Eight</div>
+        <div style="font-size: 11px;" class="items item4">Four</div>
     </div>
 
-    <!-- <h1>Flexbox Flex-Flow flex-d-row</h1>
+    <h1>Flexbox flex-d-column JC-Center align-items-end</h1>
 
     <div id="flex-flow" class="container">
         <div class="items item1">One</div>
-        <div class="items item2">Two</div>
+        <div style="height: 100px; font-size:100px" class="items item2">Two</div>
         <div class="items item3">Three</div>
-        <div class="items item4">Four</div>
-        <div class="items item1">five</div>
-        <div class="items item2">Six</div>
-        <div class="items item3">Seven</div>
-        <div class="items item4">Eight</div>
-    </div> -->
+        <div style="font-size: 11px;" class="items item4">Four</div>
+    </div>
+    <h1>Flexbox flex-d-column JC-Center align-items-center</h1>
+
+    <div id="flex-column-ac-c" class="container">
+        <div class="items item1">One</div>
+        <div style="height: 100px; font-size:100px" class="items item2">Two</div>
+        <div class="items item3">Three</div>
+        <div style="font-size: 11px;" class="items item4">Four</div>
+    </div>
 </body>
 </html>
