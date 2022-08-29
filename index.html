@@ -10,40 +10,27 @@
         h1{padding: 0 0 0 40px;}
         .container{
             background: #eee;
-            width: 600px;
             margin: 50px auto 0;
-            padding: 10px;
             border: 3px solid #000;
             display: flex;
         }
         #row{
-            flex-direction: row;
-            width: 300px;
+            justify-content: center;
         }
         #row-reverse{
-            flex-direction: column;
-            height: 200px;
-            margin-bottom: 300px;
+           justify-content: flex-end;
         }
         #column{
-            width: 300px;
-            flex-direction:row;
-            flex-wrap: wrap;
+            justify-content: flex-start;
         }
         #column-reverse{
-             height: 200px;
-            flex-direction:column;
-            flex-wrap: wrap;
+            justify-content: space-between;
         }
         #wrap-reverse{
-             height: 200px;
-            flex-direction:column;
-            flex-wrap: wrap-reverse;
+               justify-content: space-around;
         }
         #wrap-reverse-row{
-            width: 200px;
-            flex-direction:row;
-            flex-wrap: wrap-reverse;
+            justify-content: space-evenly;
         }
         #flex-flow{
             height: 200px;
@@ -53,74 +40,56 @@
         .item2{background-color: yellowgreen;}
         .item3{background-color: mediumpurple;}
         .item4{ background-color: hotpink;}
-        .items{color: #fff;font-size: 20px;font-weight: bold;padding: 10px;margin: 5px;}
+        .items{color: #fff;font-size: 20px;font-weight: bold;padding: 10px;margin: 0;}
     </style>
 </head>
 <body>
-    <h1>Flexbox Data Overflow Row</h1>
+    <h1>Flexbox Justify-Content-Center</h1>
 
     <div id="row" class="container">
         <div class="items item1">One</div>
         <div class="items item2">Two</div>
         <div class="items item3">Three</div>
         <div class="items item4">Four</div>
-        <div class="items item1">five</div>
-        <div class="items item2">Six</div>
-        <div class="items item3">Seven</div>
-        <div class="items item4">Eight</div>
     </div>
 
-    <h1>Flexbox Data Flexbox Height</h1>
+    <h1>Flexbox Justify-Content-End</h1>
 
     <div id="row-reverse" class="container">
          <div class="items item1">One</div>
         <div class="items item2">Two</div>
         <div class="items item3">Three</div>
         <div class="items item4">Four</div>
-        <div class="items item1">five</div>
-        <div class="items item2">Six</div>
-        <div class="items item3">Seven</div>
-        <div class="items item4">Eight</div>
     </div>
 
-    <h1>Flexbox Wrap</h1>
+    <h1>Flexbox Justify-Content-Start Default</h1>
 
     <div id="column" class="container">
         <div class="items item1">One</div>
         <div class="items item2">Two</div>
         <div class="items item3">Three</div>
         <div class="items item4">Four</div>
-        <div class="items item1">five</div>
-        <div class="items item2">Six</div>
-        <div class="items item3">Seven</div>
-        <div class="items item4">Eight</div>
     </div>
 
-    <h1>Flexbox Wrap with height and flex-d-column</h1>
+    <h1>Flexbox Justify-Content-Space-Between</h1>
 
     <div id="column-reverse" class="container">
        <div class="items item1">One</div>
         <div class="items item2">Two</div>
         <div class="items item3">Three</div>
         <div class="items item4">Four</div>
-        <div class="items item1">five</div>
-        <div class="items item2">Six</div>
-        <div class="items item3">Seven</div>
-        <div class="items item4">Eight</div>
     </div>
-    <h1>Flexbox Wrap-Rev with height and flex-d-column</h1>
+
+    <h1>Flexbox Justify-Content-Space-Around</h1>
 
     <div id="wrap-reverse" class="container">
         <div class="items item1">One</div>
         <div class="items item2">Two</div>
         <div class="items item3">Three</div>
         <div class="items item4">Four</div>
-        <div class="items item1">five</div>
-        <div class="items item2">Six</div>
-        <div class="items item3">Seven</div>
-        <div class="items item4">Eight</div>
     </div>
-    <h1>Flexbox Wrap-Rev with width and flex-d-column</h1>
+
+     <h1>Flexbox Justify-Content-Space-Evenly</h1>
 
     <div id="wrap-reverse-row" class="container">
         <div class="items item1">One</div>
@@ -132,7 +101,8 @@
         <div class="items item3">Seven</div>
         <div class="items item4">Eight</div>
     </div>
-    <h1>Flexbox Flex-Flow flex-d-row</h1>
+
+    <!-- <h1>Flexbox Flex-Flow flex-d-row</h1>
 
     <div id="flex-flow" class="container">
         <div class="items item1">One</div>
@@ -143,6 +113,6 @@
         <div class="items item2">Six</div>
         <div class="items item3">Seven</div>
         <div class="items item4">Eight</div>
-    </div>
+    </div> -->
 </body>
 </html>
