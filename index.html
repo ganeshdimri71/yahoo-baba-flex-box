@@ -14,38 +14,49 @@
       }
       .container {
         background: #eee;
-        margin: 10px;
+        margin: 50px;
         padding: 0px;
         border: 3px solid #000;
         display: flex;
       }
       #row {
+        flex-wrap: wrap;
       }
       #row-reverse {
+        width: 400px;
+        height: 300px;
+        flex-wrap: wrap;
+        align-content: flex-start;
       }
       #column {
+        width: 400px;
+        height: 300px;
+        flex-wrap: wrap;
+        align-content: flex-end;
       }
       #column-reverse {
+        width: 400px;
+        height: 300px;
+        flex-wrap: wrap;
+        align-content: center;
       }
       #wrap-reverse {
+        width: 400px;
+        height: 300px;
+        flex-wrap: wrap;
+        align-content: space-around;
       }
       #wrap-reverse-row {
+        width: 400px;
+        height: 300px;
+        flex-wrap: wrap;
+        align-content: space-between;
       }
       #flex-flow {
-      }
-      #flex-shrink {
-      }
-      #flex-shrink-one {
-      }
-      #flex-shrink-two {
-      }
-      #flex-shrink-three {
-      }
-      #flex-shrink-four {
-      }
-      #flex-shrink-five {
-      }
-      #flex-shrink-six {
+        width: 400px;
+        height: 300px;
+        flex-wrap: wrap;
+        align-content: space-evenly;
       }
       .item1 {
         background-color: orangered;
@@ -71,151 +82,91 @@
     </style>
   </head>
   <body>
-    <h1>Flexbox Flex Shrink</h1>
+    <h1>Flexbox Flex Basis</h1>
 
     <div id="row" class="container">
-      <div style="width: 150px; flex-shrink: 0" class="items item1">
-        width:150px flex-shrink:0
-      </div>
-      <div style="width: 150px" class="items item2">width:150px</div>
-      <div style="width: 150px" class="items item3">width:150px</div>
-      <div style="width: 150px" class="items item4">width:150px</div>
+      <div class="items item1">One</div>
+      <div class="items item2">Two</div>
+      <div class="items item3">Three</div>
+      <div class="items item4">Four</div>
     </div>
 
-    <h1>Flexbox Shrink</h1>
+    <h1>Flexbox Align-Content-Start</h1>
 
     <div id="row-reverse" class="container">
-      <div style="width: 150px; flex-shrink: 1" class="items item1">
-        width:150px flex-shrink:1
-      </div>
-      <div style="width: 150px" class="items item2">width:150px</div>
-      <div style="width: 150px" class="items item3">width:150px</div>
-      <div style="width: 150px" class="items item4">width:150px</div>
+      <div class="items item1">One</div>
+      <div class="items item2">Two</div>
+      <div class="items item3">Three</div>
+      <div class="items item4">Four</div>
+      <div class="items item1">Five</div>
+      <div class="items item2">Six</div>
+      <div class="items item3">Seven</div>
+      <div class="items item4">Eight</div>
     </div>
 
-    <h1>Flexbox Shrink</h1>
+    <h1>Flexbox Align-Content-End</h1>
 
     <div id="column" class="container">
-      <div style="width: 150px; flex-shrink: 2" class="items item1">
-        width:150px flex-shrink:2
-      </div>
-      <div style="width: 150px" class="items item2">width:150px</div>
-      <div style="width: 150px" class="items item3">width:150px</div>
-      <div style="width: 150px" class="items item4">width:150px</div>
+      <div class="items item1">One</div>
+      <div class="items item2">Two</div>
+      <div class="items item3">Three</div>
+      <div class="items item4">Four</div>
+      <div class="items item1">Five</div>
+      <div class="items item2">Six</div>
+      <div class="items item3">Seven</div>
+      <div class="items item4">Eight</div>
     </div>
 
-    <h1>Flexbox Shrink</h1>
+    <h1>Flexbox Align-Content-Center</h1>
 
     <div id="column-reverse" class="container">
-      <div style="width: 150px; flex-shrink: 4" class="items item1">
-        width:150px flex-shrink:4
-      </div>
-      <div style="width: 150px" class="items item2">width:150px</div>
-      <div style="width: 150px" class="items item3">width:150px</div>
-      <div style="width: 150px" class="items item4">width:150px</div>
+      <div class="items item1">One</div>
+      <div class="items item2">Two</div>
+      <div class="items item3">Three</div>
+      <div class="items item4">Four</div>
+      <div class="items item1">Five</div>
+      <div class="items item2">Six</div>
+      <div class="items item3">Seven</div>
+      <div class="items item4">Eight</div>
     </div>
 
-    <h1>Flexbox Shrink</h1>
+    <h1>Flexbox Align-Content-Space-Around</h1>
 
     <div id="wrap-reverse" class="container">
-      <div style="flex-basis: 200px; flex-shrink: 1" class="items item1">
-        flex-basis: 200px;flex-shrink:1
-      </div>
+      <div class="items item1">One</div>
       <div class="items item2">Two</div>
       <div class="items item3">Three</div>
       <div class="items item4">Four</div>
+      <div class="items item1">Five</div>
+      <div class="items item2">Six</div>
+      <div class="items item3">Seven</div>
+      <div class="items item4">Eight</div>
     </div>
 
-    <h1>Flexbox Flex Shrink</h1>
+    <h1>Flexbox Align-Content-Space-Between</h1>
 
     <div id="wrap-reverse-row" class="container">
-      <div style="flex-basis: 200px; flex-shrink: 0" class="items item1">
-        flex-basis: 200px;flex-shrink:0
-      </div>
+      <div class="items item1">One</div>
       <div class="items item2">Two</div>
       <div class="items item3">Three</div>
       <div class="items item4">Four</div>
+      <div class="items item1">Five</div>
+      <div class="items item2">Six</div>
+      <div class="items item3">Seven</div>
+      <div class="items item4">Eight</div>
     </div>
 
-    <h1>Flexbox Flex Shrink</h1>
+    <h1>Flexbox Align-Content-Space-Evenly</h1>
 
     <div id="flex-flow" class="container">
-      <div style="flex-basis: 200px; flex-shrink: 5" class="items item1">
-        flex-basis: 200px;flex-shrink:5
-      </div>
+      <div class="items item1">One</div>
       <div class="items item2">Two</div>
       <div class="items item3">Three</div>
-      <div style="flex-grow: 1" class="items item4">flex-grow: 1</div>
-    </div>
-
-    <h1>Flexbox Flex Shrink</h1>
-
-    <div style="width: 600px" id="flex-shrink" class="container">
-      <div style="flex-basis: 200px; flex-shrink: 0" class="items item1">
-        flex-basis: 200px;flex-shrink:0
-      </div>
-      <div class="items item2">Two</div>
-      <div class="items item3">Three</div>
-      <div style="flex-grow: 1" class="items item4">flex-grow: 1</div>
-    </div>
-
-    <h1>Flexbox Flex Shrink</h1>
-
-    <div style="width: 400px" id="flex-shrink-one" class="container">
-      <div style="flex-basis: 200px; flex-shrink: 1" class="items item1">
-        flex-basis: 200px;flex-shrink:1
-      </div>
-      <div class="items item2">Two</div>
-      <div class="items item3">Three</div>
-      <div style="flex-grow: 1" class="items item4">flex-grow: 1</div>
-    </div>
-
-    <h1>Flexbox Flex Shrink</h1>
-
-    <div style="width: 300px" id="flex-shrink-two" class="container">
-      <div style="flex-basis: 200px; flex-shrink: 1" class="items item1">
-        sab
-      </div>
-      <div class="items item2">Two</div>
-      <div class="items item3">Three</div>
-      <div style="flex-grow: 1" class="items item4">flex-grow: 1</div>
-    </div>
-
-    <h1>Flexbox Flex Shrink</h1>
-    <div id="flex-shrink-three" class="container">
-      <div style="flex-basis: 180px; flex-shrink: 0" class="items item1">
-        f-b-180px f-s-0
-      </div>
-      <div class="items item2">Two</div>
-      <div class="items item3">Three</div>
-      <div style="flex-grow: 1" class="items item4">flex-grow: 1</div>
-    </div>
-    <h1>Flexbox Flex Shrink</h1>
-    <div id="flex-shrink-four" class="container">
-      <div style="flex: 0 0 180px" class="items item1">
-        style="flex: 0 0 180px;
-      </div>
-      <div class="items item2">Two</div>
-      <div class="items item3">Three</div>
-      <div style="flex-grow: 1" class="items item4">flex-grow: 1</div>
-    </div>
-    <h1>Flexbox Flex Shrink</h1>
-    <div id="flex-shrink-five" class="container">
-      <div style="flex: 0 1 180px" class="items item1">
-        style="flex: 0 1 180px;
-      </div>
-      <div class="items item2">Two</div>
-      <div class="items item3">Three</div>
-      <div style="flex-grow: 1" class="items item4">flex-grow: 1</div>
-    </div>
-    <h1>Flexbox Flex Shrink</h1>
-    <div id="flex-shrink-six" class="container">
-      <div style="flex: 0 1 auto" class="items item1">
-        s="f:0 1 auto;
-      </div>
-      <div class="items item2">Two</div>
-      <div class="items item3">Three</div>
-      <div style="flex-grow: 1" class="items item4">flex-grow: 1</div>
+      <div class="items item4">Four</div>
+      <div class="items item1">five</div>
+      <div class="items item2">Six</div>
+      <div class="items item3">Seven</div>
+      <div class="items item4">Eight</div>
     </div>
   </body>
 </html>

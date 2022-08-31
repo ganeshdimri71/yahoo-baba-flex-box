@@ -8,3 +8,4 @@ f215e0d : align-items
 f0711ec : order
 df0798f : flex grow
 05acb02 : flex basis
+651ad9e : flex-shrink
