@@ -20,25 +20,25 @@
         display: flex;
       }
       #row {
-
+flex-direction: column;
       }
       #row-reverse {
-       
+   
       }
       #column {
-    
+  
       }
       #column-reverse {
-    
+     
       }
       #wrap-reverse {
-      
+     
       }
       #wrap-reverse-row {
-      
+  
       }
       #flex-flow {
-     
+    
       }
       .item1 {
         background-color: orangered;
@@ -57,61 +57,102 @@
         font-size: 20px;
         font-weight: bold;
         text-align: center;
-        padding: 10px;
+        padding: 0px;
+        margin: 0px;
+        height: 60px;
       }
     </style>
   </head>
   <body>
-    <h1>Flexbox Flex Margin Auto</h1>
+    <h1>Flexbox Nested flex</h1>
 
-    <div style="height:400px;" id="row" class="container">
-      <div style="margin: auto;" class="items item1">style="margin: auto;"</div>
+    <div id="row" class="container">
+      <div style="height:100px;" class="items item1">One</div>
+      <div style="display:flex;  height:100px;" class="items item2">
+        <div style="background-color:wheat;flex-grow:1;margin:5px;color:mediumpurple" class="subitem subitem1">A</div>
+        <div style="background-color:wheat;flex-grow:1;margin:5px;color:mediumpurple" class="subitem subitem1">B</div>
+        <div style="background-color:wheat;flex-grow:1;margin:5px;color:mediumpurple" class="subitem subitem1">C</div>
+      </div>
+      <div style="height:100px;" class="items item3">Three</div>
+   
     </div>
 
-  <h1>Flexbox Flex Margin Auto</h1>
+    <h1>Flexbox Align-Content-Start</h1>
 
-    <div style="height:400px;"  id="row-reverse" class="container">
-       <div style="margin-left: auto;" class="items item1">"m-l: auto;"</div>
-     
+    <div id="row-reverse" class="container">
+      <div class="items item1">One</div>
+      <div class="items item2">Two</div>
+      <div class="items item3">Three</div>
+      <div class="items item4">Four</div>
+      <div class="items item1">Five</div>
+      <div class="items item2">Six</div>
+      <div class="items item3">Seven</div>
+      <div class="items item4">Eight</div>
     </div>
 
-    <h1>Flexbox Flex Margin Auto</h1>
+    <h1>Flexbox Align-Content-End</h1>
 
-    <div style="height:400px;"  id="column" class="container">
-     <div style="margin-top: auto;" class="items item1">"m-t: auto;"</div>
+    <div id="column" class="container">
+      <div class="items item1">One</div>
+      <div class="items item2">Two</div>
+      <div class="items item3">Three</div>
+      <div class="items item4">Four</div>
+      <div class="items item1">Five</div>
+      <div class="items item2">Six</div>
+      <div class="items item3">Seven</div>
+      <div class="items item4">Eight</div>
     </div>
 
-     <h1>Flexbox Flex Margin Auto</h1>
+    <h1>Flexbox Align-Content-Center</h1>
 
-    <div style="height:400px;"  id="column-reverse" class="container">
-       <div style="margin-top: auto; margin-left:auto;" class="items item1">m-t m-l: auto</div>
+    <div id="column-reverse" class="container">
+      <div class="items item1">One</div>
+      <div class="items item2">Two</div>
+      <div class="items item3">Three</div>
+      <div class="items item4">Four</div>
+      <div class="items item1">Five</div>
+      <div class="items item2">Six</div>
+      <div class="items item3">Seven</div>
+      <div class="items item4">Eight</div>
     </div>
 
-    <h1>Flexbox Flex Margin Auto</h1>
+    <h1>Flexbox Align-Content-Space-Around</h1>
 
-    <div  id="wrap-reverse" class="container">
-      <div style="height:100px;width:100px;" class="items item1">h:100px w:100px</div>
-      <div style="height:100px;width:100px;margin-right: auto;" class="items item2">h:100px w:100px me-a</div>
-      <div style="height:100px;width:100px;" class="items item3">h:100px w:100px</div>
-      <div style="height:100px;width:100px;" class="items item4">h:100px w:100px</div>
+    <div id="wrap-reverse" class="container">
+      <div class="items item1">One</div>
+      <div class="items item2">Two</div>
+      <div class="items item3">Three</div>
+      <div class="items item4">Four</div>
+      <div class="items item1">Five</div>
+      <div class="items item2">Six</div>
+      <div class="items item3">Seven</div>
+      <div class="items item4">Eight</div>
     </div>
 
-   <h1>Flexbox Flex Margin Auto</h1>
+    <h1>Flexbox Align-Content-Space-Between</h1>
 
     <div id="wrap-reverse-row" class="container">
-      <div style="height:100px;width:100px;" class="items item1">h:100px w:100px</div>
-      <div style="height:100px;width:100px;" class="items item2">h:100px w:100px </div>
-      <div style="height:100px;width:100px;margin-right: auto;" class="items item3">h:100px w:100px me-a</div>
-      <div style="height:100px;width:100px;" class="items item4">h:100px w:100px</div>
-          </div>
+      <div class="items item1">One</div>
+      <div class="items item2">Two</div>
+      <div class="items item3">Three</div>
+      <div class="items item4">Four</div>
+      <div class="items item1">Five</div>
+      <div class="items item2">Six</div>
+      <div class="items item3">Seven</div>
+      <div class="items item4">Eight</div>
+    </div>
 
     <h1>Flexbox Align-Content-Space-Evenly</h1>
 
     <div id="flex-flow" class="container">
-     <div style="height:100px;width:100px;" class="items item1">h:100px w:100px</div>
-      <div style="height:100px;width:100px;" class="items item2">h:100px w:100px </div>
-      <div style="height:100px;width:100px;" class="items item3">h:100px w:100px</div>
-      <div style="height:100px;width:100px; margin-left: auto;" class="items item4">h:100px w:100px ml-a</div>
+      <div class="items item1">One</div>
+      <div class="items item2">Two</div>
+      <div class="items item3">Three</div>
+      <div class="items item4">Four</div>
+      <div class="items item1">five</div>
+      <div class="items item2">Six</div>
+      <div class="items item3">Seven</div>
+      <div class="items item4">Eight</div>
     </div>
   </body>
 </html>
