@@ -1,98 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    body{
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    h1{padding: 0 0 0 40px;}
-#wrapper{
-  list-style: none;
-  margin:50px;
-  background: #eee;
-  margin: 50px;
-  padding: 10px;
-}
-
-#wrapper li{
-  display: flex;
-  justify-content: flex-end;
-  padding: 5px 0px;
-}
-
-#wrapper li label{
-  flex: 1;
-}
-#wrapper li input{
-  flex: 3;
-}
-
-@media screen and (min-width:300px) and (max-width:499px){
-  #wrapper li{
-  flex-direction: column;
-}
-  #wrapper li input{
-  flex: 1;
-}
-}
-
-@media screen and (min-width:500px){
-  #wrapper li input{
-  flex: 2;
-}
-}
-
-@media screen and (min-width:768px){
-  #wrapper li input{
-  flex: 5;
-}
-}
-
-@media screen and (min-width:992px){
-  #wrapper li input{
-  flex: 7;
-}
-}
-
-@media screen and (min-width:1200px){
-  #wrapper li input{
-  flex: 8;
-}
-}
-
-
-
-
-
-
-
-  </style>
-</head>
-<body>
-  <h1>Yahoo Baba: Align Form with flexbox</h1>
-
-  <form action="">
-    <ul id="wrapper">
-      <li>
-        <label for="">Name</label>
-        <input type="text">
-      </li>
-      <li>
-       <label for=""">Class Name</label>
-        <input type="text">
-      </li>
-      <li>
-       <label for="">Email Address</label>
-        <input type="email">
-      </li>
-      <li>
-       <button type="submit">Save</button>
-      </li>
-    </ul>
-  </form>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flex Box Layout</title>
+  </head>
+  <body>
+    <header>
+      <nav id="menu">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div id="logo">
+        <a href="">Yahoo Baba</a>
+      </div>
+      <nav id="social-links">
+        <ul>
+          <li>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="main">
+      <aside class="">
+        <ul>
+          <li><a href="">Some Link</a></li>
+          <li><a href="">Some Link</a></li>
+          <li><a href="">Some Link</a></li>
+          <li><a href="">Some Link</a></li>
+          <li><a href="">Some Link</a></li>
+        </ul>
+        <img src="images/services4.jpg" alt="">
+      </aside>
+      <article class="">
+        <h2>Welcome to our Website</h2>
+        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
+        architecto necessitatibus sint dolores ab, officia maxime? Culpa
+        quisquam vitae, possimus officia accusamus non, nostrum, libero harum
+        aspernatur voluptatibus dolore commodi? Expedita provident cum
+        explicabo, sed tempore perferendis quis porro repellendus, vel veniam
+        minus amet ratione id soluta maiores similique ipsam minima dolore iure
+        nostrum aperiam! Distinctio reiciendis laudantium ipsum. Perferendis
+        recusandae architecto itaque eos quis provident dolor asperiores sint
+        modi cum hic quia ipsam tempore exercitationem iste, alias temporibus
+        nostrum totam error illum ipsa reprehenderit aut. Rerum, quia
+        consectetur? Soluta fugiat dolorem, itaque totam quod dolorum. Earum
+        culpa cupiditate harum.
+        <h2>Our Services</h2>
+        <div class="services-container">
+          <div class="service-box">
+            <div class="service-img">
+              <img
+                src="images/services1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="service-title">
+              <h3>Web Designing</h3>
+            </div>
+            <div class="service-dsc">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque,
+                dignissimos? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, excepturi quasi eius fugiat neque sint sit eligendi odit totam illum.
+              </p>
+            </div>
+            <div class="call-to-action"><a href="">Read More</a></div>
+          </div>
+          <div class="service-box">
+            <div class="service-img">
+              <img
+                src="images/services2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="service-title">
+              <h3>Web Developmemt</h3>
+            </div>
+            <div class="service-dsc">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque,
+                dignissimos?
+              </p>
+            </div>
+            <div class="call-to-action"><a href="">Read More</a></div>
+          </div>
+          <div class="service-box">
+            <div class="service-img">
+              <img
+                src="images/services3.jpg"
+                alt=""
+              />
+            </div>
+            <div class="service-title">
+              <h3>Mobile App Developmemt</h3>
+            </div>
+            <div class="service-dsc">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque,
+                dignissimos?
+              </p>
+            </div>
+            <div class="call-to-action"><a href="">Read More</a></div>
+          </div>
+        </div>
+      </article>
+   
+    </div>
+       <footer>Made by Yahoo Baba</footer>
+  </body>
 </html>
