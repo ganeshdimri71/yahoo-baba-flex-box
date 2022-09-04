@@ -12,146 +12,10 @@
     <div
       style="
         background-color: #eee;
-        width: 600px;
+        width: 650px;
         margin: 50px auto 0;
         display: grid;
-        grid-template-columns: repeat(3, 100px);
-        grid-template-rows: repeat(2, 100px);
-      "
-    >
-      <div style="background-color: orangered; color: white">One</div>
-      <div style="background-color: yellowgreen; color: white">Two</div>
-      <div style="background-color: slateblue; color: white">Three</div>
-      <div style="background-color: hotpink; color: white">Four</div>
-    </div>
-    <h1>grid-template-columns: repeat(auto-fill, 100px)</h1>
-
-    <div
-      style="
-        background-color: #eee;
-        width: 600px;
-        margin: 50px auto 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 100px);
-        grid-template-rows: repeat(2, 100px);
-      "
-    >
-      <div style="background-color: orangered; color: white">One</div>
-      <div style="background-color: yellowgreen; color: white">Two</div>
-      <div style="background-color: slateblue; color: white">Three</div>
-      <div style="background-color: hotpink; color: white">Four</div>
-    </div>
-    <h1>grid-template-columns: repeat(auto-fit, 100px);</h1>
-
-    <div
-      style="
-        background-color: #eee;
-        width: 600px;
-        margin: 50px auto 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, 100px);
-        grid-template-rows: repeat(2, 100px);
-      "
-    >
-      <div style="background-color: orangered; color: white">One</div>
-      <div style="background-color: yellowgreen; color: white">Two</div>
-      <div style="background-color: slateblue; color: white">Three</div>
-      <div style="background-color: hotpink; color: white">Four</div>
-    </div>
-    <h1>grid-template-columns: repeat(auto-fit, 100px);</h1>
-
-    <div
-      style="
-        background-color: #eee;
-        width: 600px;
-        margin: 50px auto 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 100px);
-        grid-template-rows: repeat(2, 100px);
-      "
-    >
-      <div style="background-color: orangered; color: white">One</div>
-      <div style="background-color: yellowgreen; color: white">Two</div>
-      <div style="background-color: slateblue; color: white">Three</div>
-      <div style="background-color: hotpink; color: white;grid-column-end: -1;">Four</div>
-    </div>
-    <h1>grid-template-columns: repeat(auto-fit, 100px);</h1>
-
-    <div
-      style="
-        background-color: #eee;
-        width: 600px;
-        margin: 50px auto 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, 100px);
-        grid-template-rows: repeat(2, 100px);
-      "
-    >
-      <div style="background-color: orangered; color: white">One</div>
-      <div style="background-color: yellowgreen; color: white">Two</div>
-      <div style="background-color: slateblue; color: white">Three</div>
-      <div style="background-color: hotpink; color: white;grid-column-end: -1;">Four</div>
-    </div>
-    <h1>grid-template-columns: repeat(auto-fit, 100px);</h1>
-
-    <div
-      style="
-        background-color: #eee;
-        width: 600px;
-        margin: 50px auto 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
-        grid-template-rows: repeat(2, 100px);
-      "
-    >
-      <div style="background-color: orangered; color: white">One</div>
-      <div style="background-color: yellowgreen; color: white">Two</div>
-      <div style="background-color: slateblue; color: white">Three</div>
-      <div style="background-color: hotpink; color: white;grid-column-end: -1;">Four</div>
-    </div>
-    <h1>grid-template-columns: repeat(auto-fit, minmax(150px,1fr));</h1>
-
-    <div
-      style="
-        background-color: #eee;
-        width: 80%;
-        margin: 50px auto 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
-        grid-template-rows: repeat(2, 100px);
-      "
-    >
-      <div style="background-color: orangered; color: white">One</div>
-      <div style="background-color: yellowgreen; color: white">Two</div>
-      <div style="background-color: slateblue; color: white">Three</div>
-      <div style="background-color: hotpink; color: white;">Four</div>
-    </div>
-    <h1>grid-template-columns: repeat(auto-fit, minmax(150px,1fr));</h1>
-
-    <div
-      style="
-        background-color: #eee;
-        width: 80%;
-        margin: 50px auto 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
-        grid-template-rows: repeat(2, 100px);
-      "
-    >
-      <div style="background-color: orangered; color: white">One</div>
-      <div style="background-color: yellowgreen; color: white">Two</div>
-      <div style="background-color: slateblue; color: white">Three</div>
-      <div style="background-color: hotpink; color: white;">Four</div>
-    </div>
-    <h1>grid-template-columns: repeat(auto-fit, minmax(150px,1fr));</h1>
-
-    <div
-      style="
-        background-color: #eee;
-        width: 80%;
-        margin: 50px auto 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+        grid-template-columns: fit-content(200px) fit-content(300px) 1fr;
         grid-template-rows: repeat(2, 100px);
         grid-auto-rows: 80px;
       "
@@ -159,7 +23,69 @@
       <div style="background-color: orangered; color: white">One</div>
       <div style="background-color: yellowgreen; color: white">Two</div>
       <div style="background-color: slateblue; color: white">Three</div>
-      <div style="background-color: hotpink; color: white;">Four</div>
+      <div style="background-color: hotpink; color: white">Four</div>
+      <div style="background-color: red; color: white">Five</div>
+      <div style="background-color: purple; color: white">Six</div>
+    </div>
+    <h1>Fit Content</h1>
+
+    <div
+      style="
+        background-color: #eee;
+        width: 650px;
+        margin: 50px auto 0;
+        display: grid;
+        grid-template-columns: fit-content(200px) fit-content(300px) 1fr;
+        grid-template-rows: repeat(2, 100px);
+        grid-auto-rows: 80px;
+      "
+    >
+      <div style="background-color: orangered; color: white">One Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit reiciendis molestias culpa sapiente! Maxime rem enim velit natus animi quidem ipsum, amet numquam aliquid quibusdam consectetur provident, hic vero architecto, quas iure? Non qui, laboriosam perferendis est odio voluptates. Reiciendis deserunt temporibus adipisci nisi quo maiores doloremque, nihil est nulla exercitationem amet! Officiis accusantium quaerat, accusamus nemo possimus ipsa tenetur reiciendis aperiam quia numquam sit ipsum ad doloremque fugit ducimus et mollitia saepe ex eum velit suscipit placeat quisquam! Neque aliquid ab ullam iure soluta sequi commodi eos numquam repellendus quam harum delectus saepe, consectetur obcaecati consequatur illo assumenda at.</div>
+      <div style="background-color: yellowgreen; color: white">Two</div>
+      <div style="background-color: slateblue; color: white">Three</div>
+      <div style="background-color: hotpink; color: white">Four</div>
+      <div style="background-color: red; color: white">Five</div>
+      <div style="background-color: purple; color: white">Six</div>
+    </div>
+    <h1>Fit Content</h1>
+
+    <div
+      style="
+        background-color: #eee;
+        width: 650px;
+        margin: 50px auto 0;
+        display: grid;
+        grid-template-columns: fit-content(200px) fit-content(300px) 1fr;
+        grid-template-rows: repeat(2, 100px);
+        grid-auto-rows: 80px;
+      "
+    >
+      <div style="background-color: orangered; color: white">One Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit reiciendis molestias culpa sapiente! Maxime rem enim velit natus animi quidem ipsum, amet numquam aliquid quibusdam consectetur provident, hic vero architecto, quas iure? Non qui, laboriosam perferendis est odio voluptates. Reiciendis deserunt temporibus adipisci nisi quo maiores doloremque, nihil est nulla exercitationem amet! Officiis accusantium quaerat, accusamus nemo possimus ipsa tenetur reiciendis aperiam quia numquam sit ipsum ad doloremque fugit ducimus et mollitia saepe ex eum velit suscipit placeat quisquam! Neque aliquid ab ullam iure soluta sequi commodi eos numquam repellendus quam harum delectus saepe, consectetur obcaecati consequatur illo assumenda at.</div>
+      <div style="background-color: yellowgreen; color: white">Two Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, ipsam est odio reiciendis perspiciatis dignissimos natus porro amet quam ipsum deserunt facere inventore voluptate eos illum alias atque! Quae amet at deserunt, placeat, eum adipisci quo architecto dolorem maiores porro assumenda accusamus harum nisi labore aperiam id deleniti cupiditate sequi repellendus aut fuga voluptate odit earum? Tempore veniam debitis vero doloribus voluptas laboriosam quasi perspiciatis quas, voluptate beatae hic eos id et illum suscipit asperiores rerum pariatur. Eligendi quae voluptatum ipsum, totam, voluptatibus rem similique dolor cum molestiae reiciendis et sapiente deserunt velit ea animi soluta ut nam. Hic, perspiciatis.</div>
+      <div style="background-color: slateblue; color: white">Three</div>
+      <div style="background-color: hotpink; color: white">Four</div>
+      <div style="background-color: red; color: white">Five</div>
+      <div style="background-color: purple; color: white">Six</div>
+    </div>
+    <h1>Fit Content</h1>
+
+    <div
+      style="
+        background-color: #eee;
+        width: 650px;
+        margin: 50px auto 0;
+        display: grid;
+        grid-template-columns: fit-content(200px) fit-content(300px) 1fr;
+        grid-template-rows: repeat(2, minmax(100px,min-content));
+        grid-auto-rows: 80px;
+      "
+    >
+      <div style="background-color: orangered; color: white">One Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit reiciendis molestias culpa sapiente! Maxime rem enim velit natus animi quidem ipsum, amet numquam aliquid quibusdam consectetur provident, hic vero architecto, quas iure? Non qui, laboriosam perferendis est odio voluptates. Reiciendis deserunt temporibus adipisci nisi quo maiores doloremque, nihil est nulla exercitationem amet! Officiis accusantium quaerat, accusamus nemo possimus ipsa tenetur reiciendis aperiam quia numquam sit ipsum ad doloremque fugit ducimus et mollitia saepe ex eum velit suscipit placeat quisquam! Neque aliquid ab ullam iure soluta sequi commodi eos numquam repellendus quam harum delectus saepe, consectetur obcaecati consequatur illo assumenda at.</div>
+      <div style="background-color: yellowgreen; color: white">Two Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, ipsam est odio reiciendis perspiciatis dignissimos natus porro amet quam ipsum deserunt facere inventore voluptate eos illum alias atque! Quae amet at deserunt, placeat, eum adipisci quo architecto dolorem maiores porro assumenda accusamus harum nisi labore aperiam id deleniti cupiditate sequi repellendus aut fuga voluptate odit earum? Tempore veniam debitis vero doloribus voluptas laboriosam quasi perspiciatis quas, voluptate beatae hic eos id et illum suscipit asperiores rerum pariatur. Eligendi quae voluptatum ipsum, totam, voluptatibus rem similique dolor cum molestiae reiciendis et sapiente deserunt velit ea animi soluta ut nam. Hic, perspiciatis.</div>
+      <div style="background-color: slateblue; color: white">Three</div>
+      <div style="background-color: hotpink; color: white">Four</div>
+      <div style="background-color: red; color: white">Five</div>
+      <div style="background-color: purple; color: white">Six</div>
     </div>
   </body>
 </html>

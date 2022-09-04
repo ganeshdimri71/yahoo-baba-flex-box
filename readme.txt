@@ -23,3 +23,4 @@ cce969b : basic grid structure
 c7b074a : Min and Max Function
 4b3ea07 : Align-items justify-items place-items place-self justify-self align-self
 82e1c72 : grid-auto-flow
+86e31f3 : making responsive grid
