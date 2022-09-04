@@ -4,125 +4,456 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Flex Box Layout</title>
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: #eee;
+        width: 700px;
+        margin: 50px 0 0 50px;
+        display: grid;
+      }
+      .item1 {
+        background-color: orangered;
+      }
+      .item2 {
+        background-color: yellowgreen;
+      }
+      .item3 {
+        background-color: slateblue;
+      }
+      .item4 {
+        background-color: hotpink;
+      }
+      .item5 {
+        background-color: royalblue;
+      }
+      .item6 {
+        background-color: goldenrod;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <nav id="menu">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Contact Us</a></li>
-        </ul>
-      </nav>
-      <div id="logo">
-        <a href="">Yahoo Baba</a>
-      </div>
-      <nav id="social-links">
-        <ul>
-          <li>
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <div id="main">
-      <aside class="">
-        <ul>
-          <li><a href="">Some Link</a></li>
-          <li><a href="">Some Link</a></li>
-          <li><a href="">Some Link</a></li>
-          <li><a href="">Some Link</a></li>
-          <li><a href="">Some Link</a></li>
-        </ul>
-        <img src="images/services4.jpg" alt="">
-      </aside>
-      <article class="">
-        <h2>Welcome to our Website</h2>
-        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
-        architecto necessitatibus sint dolores ab, officia maxime? Culpa
-        quisquam vitae, possimus officia accusamus non, nostrum, libero harum
-        aspernatur voluptatibus dolore commodi? Expedita provident cum
-        explicabo, sed tempore perferendis quis porro repellendus, vel veniam
-        minus amet ratione id soluta maiores similique ipsam minima dolore iure
-        nostrum aperiam! Distinctio reiciendis laudantium ipsum. Perferendis
-        recusandae architecto itaque eos quis provident dolor asperiores sint
-        modi cum hic quia ipsam tempore exercitationem iste, alias temporibus
-        nostrum totam error illum ipsa reprehenderit aut. Rerum, quia
-        consectetur? Soluta fugiat dolorem, itaque totam quod dolorum. Earum
-        culpa cupiditate harum.
-        <h2>Our Services</h2>
-        <div class="services-container">
-          <div class="service-box">
-            <div class="service-img">
-              <img
-                src="images/services1.jpg"
-                alt=""
-              />
-            </div>
-            <div class="service-title">
-              <h3>Web Designing</h3>
-            </div>
-            <div class="service-dsc">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque,
-                dignissimos? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, excepturi quasi eius fugiat neque sint sit eligendi odit totam illum.
-              </p>
-            </div>
-            <div class="call-to-action"><a href="">Read More</a></div>
-          </div>
-          <div class="service-box">
-            <div class="service-img">
-              <img
-                src="images/services2.jpg"
-                alt=""
-              />
-            </div>
-            <div class="service-title">
-              <h3>Web Developmemt</h3>
-            </div>
-            <div class="service-dsc">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque,
-                dignissimos?
-              </p>
-            </div>
-            <div class="call-to-action"><a href="">Read More</a></div>
-          </div>
-          <div class="service-box">
-            <div class="service-img">
-              <img
-                src="images/services3.jpg"
-                alt=""
-              />
-            </div>
-            <div class="service-title">
-              <h3>Mobile App Developmemt</h3>
-            </div>
-            <div class="service-dsc">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque,
-                dignissimos?
-              </p>
-            </div>
-            <div class="call-to-action"><a href="">Read More</a></div>
-          </div>
-        </div>
-      </article>
-   <h1>Hello</h1>
+    <h1>grid-template-columns: 150px 200px;</h1>
+
+    <div style="grid-template-columns: 150px 200px" class="container">
+      <div class="items item1">First</div>
+      <div class="items item2">Second</div>
+      <div class="items item3">Thrid</div>
+      <div class="items item4">Fourth</div>
+      <div class="items item5">Fifth</div>
+      <div class="items item6">Six</div>
     </div>
-       <footer>Made by Yahoo</footer>
-       <footer>Made by Yahoo</footer>
+
+    <h1>grid-template-columns: 400px 200px;</h1>
+
+    <div style="grid-template-columns: 400px 200px" class="container">
+      <div class="items item1">First</div>
+      <div class="items item2">Second</div>
+      <div class="items item3">Thrid</div>
+      <div class="items item4">Fourth</div>
+      <div class="items item5">Fifth</div>
+      <div class="items item6">Six</div>
+    </div>
+
+    <h1>grid-template-columns: 400px 200px;grid-template-rows: 150px 100px;</h1>
+
+    <div
+      style="
+        grid-template-columns: 400px 200px;
+        grid-template-rows: 150px 100px;
+      "
+      class="container"
+    >
+      <div class="items item1">First</div>
+      <div class="items item2">Second</div>
+      <div class="items item3">Thrid</div>
+      <div class="items item4">Fourth</div>
+      <div class="items item5">Fifth</div>
+      <div class="items item6">Six</div>
+    </div>
+
+    <h1>
+      grid-template-columns: 250px 200px;grid-template-rows: 150px 100px 100px;
+    </h1>
+
+    <div
+      style="
+        grid-template-columns: 250px 200px;
+        grid-template-rows: 150px 100px 100px;
+      "
+      class="container"
+    >
+      <div class="items item1">First</div>
+      <div class="items item2">Second</div>
+      <div class="items item3">Thrid</div>
+      <div class="items item4">Fourth</div>
+      <div class="items item5">Fifth</div>
+      <div class="items item6">Six</div>
+    </div>
+
+    <h1>
+      grid-template-columns: 250px 200px 150px;grid-template-rows: 150px 100px
+      100px;
+    </h1>
+
+    <div
+      style="
+        grid-template-columns: 250px 200px 150px;
+        grid-template-rows: 150px 100px 100px;
+      "
+      class="container"
+    >
+      <div class="items item1">First</div>
+      <div class="items item2">Second</div>
+      <div class="items item3">Thrid</div>
+      <div class="items item4">Fourth</div>
+      <div class="items item5">Fifth</div>
+      <div class="items item6">Six</div>
+    </div>
+
+    <h1>
+      grid-template-columns: 250px 200px auto;grid-template-rows: 150px 100px
+      100px;
+    </h1>
+
+    <div
+      style="
+        grid-template-columns: 250px 200px auto;
+        grid-template-rows: 150px 100px 100px;
+      "
+      class="container"
+    >
+      <div class="items item1">First</div>
+      <div class="items item2">Second</div>
+      <div class="items item3">Thrid</div>
+      <div class="items item4">Fourth</div>
+      <div class="items item5">Fifth</div>
+      <div class="items item6">Six</div>
+    </div>
+
+    <h1>
+      grid-template-columns: 250px auto 200px;grid-template-rows: 150px 100px
+      100px;
+    </h1>
+
+    <div
+      style="
+        grid-template-columns: 250px auto 200px;
+        grid-template-rows: 150px 100px 100px;
+      "
+      class="container"
+    >
+      <div class="items item1">First</div>
+      <div class="items item2">Second</div>
+      <div class="items item3">Thrid</div>
+      <div class="items item4">Fourth</div>
+      <div class="items item5">Fifth</div>
+      <div class="items item6">Six</div>
+    </div>
+
+    <h1>
+      grid-template-columns: 250px auto 200px;grid-template-rows: 150px 100px
+      100px;
+    </h1>
+
+    <div
+      style="
+        grid-template-columns: 100px auto 200px;
+        grid-template-rows: 150px 100px 100px;
+      "
+      class="container"
+    >
+      <div class="items item1">First</div>
+      <div class="items item2">Second</div>
+      <div class="items item3">Thrid</div>
+      <div class="items item4">Fourth</div>
+      <div class="items item5">Fifth</div>
+      <div class="items item6">Six</div>
+    </div>
+
+    <h1>
+      grid-template-columns: 55% 25% auto;grid-template-rows: 150px 100px 100px;
+    </h1>
+
+    <div
+      style="
+        grid-template-columns: 55% 25% auto;
+        grid-template-rows: 150px 100px 100px;
+      "
+      class="container"
+    >
+      <div class="items item1">First</div>
+      <div class="items item2">Second</div>
+      <div class="items item3">Thrid</div>
+      <div class="items item4">Fourth</div>
+      <div class="items item5">Fifth</div>
+      <div class="items item6">Six</div>
+    </div>
+
+    <h1>
+      grid-template-columns: 55% 100px auto;grid-template-rows: 150px 100px
+      100px;
+    </h1>
+
+    <div
+      style="
+        grid-template-columns: 55% 100px auto;
+        grid-template-rows: 150px 100px 100px;
+      "
+      class="container"
+    >
+      <div class="items item1">First</div>
+      <div class="items item2">Second</div>
+      <div class="items item3">Thrid</div>
+      <div class="items item4">Fourth</div>
+      <div class="items item5">Fifth</div>
+      <div class="items item6">Six</div>
+    </div>
+
+    <h1>
+      grid-template-columns: 1fr 1fr;grid-template-rows: 150px 100px 100px;
+    </h1>
+
+    <div
+      style="
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 150px 100px 100px;
+      "
+      class="container"
+    >
+      <div class="items item1">First</div>
+      <div class="items item2">Second</div>
+      <div class="items item3">Thrid</div>
+      <div class="items item4">Fourth</div>
+      <div class="items item5">Fifth</div>
+      <div class="items item6">Six</div>
+    </div>
+
+    <h1>
+      grid-template-columns: 1fr 1fr 1fr;grid-template-rows: 150px 100px 100px;
+    </h1>
+
+    <div
+      style="
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 150px 100px 100px;
+      "
+      class="container"
+    >
+      <div class="items item1">First</div>
+      <div class="items item2">Second</div>
+      <div class="items item3">Thrid</div>
+      <div class="items item4">Fourth</div>
+      <div class="items item5">Fifth</div>
+      <div class="items item6">Six</div>
+    </div>
+
+    <h1>
+      grid-template-columns: 1fr 2fr 1fr;grid-template-rows: 150px 100px 100px;
+    </h1>
+
+    <div
+      style="
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 150px 100px 100px;
+      "
+      class="container"
+    >
+      <div class="items item1">First</div>
+      <div class="items item2">Second</div>
+      <div class="items item3">Thrid</div>
+      <div class="items item4">Fourth</div>
+      <div class="items item5">Fifth</div>
+      <div class="items item6">Six</div>
+    </div>
+
+    <h1>
+      grid-template-columns: 1fr 3fr 1fr;grid-template-rows: 150px 100px 100px;
+    </h1>
+
+    <div
+      style="
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 150px 100px 100px;
+      "
+      class="container"
+    >
+      <div class="items item1">First</div>
+      <div class="items item2">Second</div>
+      <div class="items item3">Thrid</div>
+      <div class="items item4">Fourth</div>
+      <div class="items item5">Fifth</div>
+      <div class="items item6">Six</div>
+    </div>
+
+    <h1>
+      grid-template-columns: 1fr 3fr 1fr;grid-template-rows: 150px 100px 100px
+      grid-gap: 20px;
+    </h1>
+
+    <div
+      style="
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 150px 100px 100px;
+        grid-gap: 20px;
+      "
+      class="container"
+    >
+      <div class="items item1">First</div>
+      <div class="items item2">Second</div>
+      <div class="items item3">Thrid</div>
+      <div class="items item4">Fourth</div>
+      <div class="items item5">Fifth</div>
+      <div class="items item6">Six</div>
+    </div>
+
+    <h1>
+      grid-template-columns: repeat(2,200px);grid-template-rows: 150px 100px
+      100px grid-gap: 20px;
+    </h1>
+
+    <div
+      style="
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: 150px 100px 100px;
+        grid-gap: 20px;
+      "
+      class="container"
+    >
+      <div class="items item1">First</div>
+      <div class="items item2">Second</div>
+      <div class="items item3">Thrid</div>
+      <div class="items item4">Fourth</div>
+      <div class="items item5">Fifth</div>
+      <div class="items item6">Six</div>
+    </div>
+
+    <h1>
+      grid-template-columns: repeat(3,200px);grid-template-rows: 150px 100px
+      100px grid-gap: 20px;
+    </h1>
+
+    <div
+      style="
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: 150px 100px 100px;
+        grid-gap: 20px;
+      "
+      class="container"
+    >
+      <div class="items item1">First</div>
+      <div class="items item2">Second</div>
+      <div class="items item3">Thrid</div>
+      <div class="items item4">Fourth</div>
+      <div class="items item5">Fifth</div>
+      <div class="items item6">Six</div>
+    </div>
+
+    <h1>
+      grid-template-columns: repeat(2,150px) 1fr;grid-template-rows: 150px 100px
+      100px grid-gap: 20px;
+    </h1>
+
+    <div
+      style="
+        grid-template-columns: repeat(2, 150px) 1fr;
+        grid-template-rows: 150px 100px 100px;
+        grid-gap: 20px;
+      "
+      class="container"
+    >
+      <div class="items item1">First</div>
+      <div class="items item2">Second</div>
+      <div class="items item3">Thrid</div>
+      <div class="items item4">Fourth</div>
+      <div class="items item5">Fifth</div>
+      <div class="items item6">Six</div>
+    </div>
+
+    <h1>
+      grid-template-columns: repeat(2,150px) 50%;grid-template-rows: 150px 100px
+      100px grid-gap: 20px;
+    </h1>
+
+    <div
+      style="
+        grid-template-columns: repeat(2, 150px) 50%;
+        grid-template-rows: 150px 100px 100px;
+        grid-gap: 20px;
+      "
+      class="container"
+    >
+      <div class="items item1">First</div>
+      <div class="items item2">Second</div>
+      <div class="items item3">Thrid</div>
+      <div class="items item4">Fourth</div>
+      <div class="items item5">Fifth</div>
+      <div class="items item6">Six</div>
+    </div>
+
+    <h1>
+      grid-template-columns: 50% repeat(2,150px) ;grid-template-rows: 150px
+      100px 100px grid-gap: 20px;
+    </h1>
+
+    <div
+      style="
+        grid-template-columns: 50% repeat(2, 150px);
+        grid-template-rows: 150px 100px 100px;
+        grid-gap: 20px;
+      "
+      class="container"
+    >
+      <div class="items item1">First</div>
+      <div class="items item2">Second</div>
+      <div class="items item3">Thrid</div>
+      <div class="items item4">Fourth</div>
+      <div class="items item5">Fifth</div>
+      <div class="items item6">Six</div>
+    </div>
+
+    <h1>
+      grid-template-columns: 50% repeat(2,150px) ;grid-template-rows:
+      repeat(2,1fr) grid-gap: 20px; height: 800px;
+    </h1>
+
+    <div
+      style="
+        grid-template-columns: 50% repeat(2, 150px);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 20px;
+        height: 800px;
+      "
+      class="container"
+    >
+      <div class="items item1">First</div>
+      <div class="items item2">Second</div>
+      <div class="items item3">Thrid</div>
+      <div class="items item4">Fourth</div>
+      <div class="items item5">Fifth</div>
+      <div class="items item6">Six</div>
+    </div>
+
+    <h1>
+      grid-template-columns: 50% repeat(2,150px) ;grid-template-rows: 1fr 200px
+      grid-gap: 20px; height: 800px;
+    </h1>
+
+    <div
+      style="
+        grid-template-columns: 50% repeat(2, 150px);
+        grid-template-rows: 1fr 200px;
+        grid-gap: 20px;
+        height: 800px;
+      "
+      class="container"
+    >
+      <div class="items item1">First</div>
+      <div class="items item2">Second</div>
+      <div class="items item3">Thrid</div>
+      <div class="items item4">Fourth</div>
+      <div class="items item5">Fifth</div>
+      <div class="items item6">Six</div>
+    </div>
   </body>
 </html>
