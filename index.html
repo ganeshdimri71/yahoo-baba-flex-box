@@ -14,28 +14,54 @@
       }
       .item1 {
         background-color: orangered;
+        color: white;
       }
       .item2 {
         background-color: yellowgreen;
+        color: white;
       }
       .item3 {
         background-color: slateblue;
+        color: white;
       }
       .item4 {
         background-color: hotpink;
+        color: white;
       }
       .item5 {
         background-color: royalblue;
+        color: white;
       }
       .item6 {
         background-color: goldenrod;
+        color: white;
       }
     </style>
   </head>
   <body>
-    <h1>grid-template-columns: 150px 200px;</h1>
+    <h1>grid-template-columns: repeat(2,1fr);grid-template-rows: 100px 100px 100px  grid-row-gap: 20px grid-column-gap: 20px;</h1>
 
-    <div style="grid-template-columns: 150px 200px" class="container">
+    <div style="grid-template-columns: repeat(2,1fr);grid-template-rows: 100px 100px 100px; grid-row-gap: 15px;grid-column-gap: 20px;" class="container">
+      <div class="items item1">First</div>
+      <div class="items item2">Second</div>
+      <div class="items item3">Thrid</div>
+      <div class="items item4">Fourth</div>
+      <div class="items item5">Fifth</div>
+      <div class="items item6">Six</div>
+    </div>
+    <h1>grid-template-columns: repeat(2,1fr);grid-template-rows: 100px 100px 100px grid-gap: 15px 50px;</h1>
+
+    <div style="grid-template-columns: repeat(2,1fr);grid-template-rows: 100px 100px 100px; grid-gap: 15px 50px;" class="container">
+      <div class="items item1">First</div>
+      <div class="items item2">Second</div>
+      <div class="items item3">Thrid</div>
+      <div class="items item4">Fourth</div>
+      <div class="items item5">Fifth</div>
+      <div class="items item6">Six</div>
+    </div>
+    <h1>grid-template-columns: repeat(3,1fr);grid-template-rows: 100px 100px; grid-gap: 15px 50px;</h1>
+
+    <div style="grid-template-columns: repeat(3,1fr);grid-template-rows: 100px 100px; grid-gap: 15px 50px;" class="container">
       <div class="items item1">First</div>
       <div class="items item2">Second</div>
       <div class="items item3">Thrid</div>
@@ -44,416 +70,6 @@
       <div class="items item6">Six</div>
     </div>
 
-    <h1>grid-template-columns: 400px 200px;</h1>
-
-    <div style="grid-template-columns: 400px 200px" class="container">
-      <div class="items item1">First</div>
-      <div class="items item2">Second</div>
-      <div class="items item3">Thrid</div>
-      <div class="items item4">Fourth</div>
-      <div class="items item5">Fifth</div>
-      <div class="items item6">Six</div>
-    </div>
-
-    <h1>grid-template-columns: 400px 200px;grid-template-rows: 150px 100px;</h1>
-
-    <div
-      style="
-        grid-template-columns: 400px 200px;
-        grid-template-rows: 150px 100px;
-      "
-      class="container"
-    >
-      <div class="items item1">First</div>
-      <div class="items item2">Second</div>
-      <div class="items item3">Thrid</div>
-      <div class="items item4">Fourth</div>
-      <div class="items item5">Fifth</div>
-      <div class="items item6">Six</div>
-    </div>
-
-    <h1>
-      grid-template-columns: 250px 200px;grid-template-rows: 150px 100px 100px;
-    </h1>
-
-    <div
-      style="
-        grid-template-columns: 250px 200px;
-        grid-template-rows: 150px 100px 100px;
-      "
-      class="container"
-    >
-      <div class="items item1">First</div>
-      <div class="items item2">Second</div>
-      <div class="items item3">Thrid</div>
-      <div class="items item4">Fourth</div>
-      <div class="items item5">Fifth</div>
-      <div class="items item6">Six</div>
-    </div>
-
-    <h1>
-      grid-template-columns: 250px 200px 150px;grid-template-rows: 150px 100px
-      100px;
-    </h1>
-
-    <div
-      style="
-        grid-template-columns: 250px 200px 150px;
-        grid-template-rows: 150px 100px 100px;
-      "
-      class="container"
-    >
-      <div class="items item1">First</div>
-      <div class="items item2">Second</div>
-      <div class="items item3">Thrid</div>
-      <div class="items item4">Fourth</div>
-      <div class="items item5">Fifth</div>
-      <div class="items item6">Six</div>
-    </div>
-
-    <h1>
-      grid-template-columns: 250px 200px auto;grid-template-rows: 150px 100px
-      100px;
-    </h1>
-
-    <div
-      style="
-        grid-template-columns: 250px 200px auto;
-        grid-template-rows: 150px 100px 100px;
-      "
-      class="container"
-    >
-      <div class="items item1">First</div>
-      <div class="items item2">Second</div>
-      <div class="items item3">Thrid</div>
-      <div class="items item4">Fourth</div>
-      <div class="items item5">Fifth</div>
-      <div class="items item6">Six</div>
-    </div>
-
-    <h1>
-      grid-template-columns: 250px auto 200px;grid-template-rows: 150px 100px
-      100px;
-    </h1>
-
-    <div
-      style="
-        grid-template-columns: 250px auto 200px;
-        grid-template-rows: 150px 100px 100px;
-      "
-      class="container"
-    >
-      <div class="items item1">First</div>
-      <div class="items item2">Second</div>
-      <div class="items item3">Thrid</div>
-      <div class="items item4">Fourth</div>
-      <div class="items item5">Fifth</div>
-      <div class="items item6">Six</div>
-    </div>
-
-    <h1>
-      grid-template-columns: 250px auto 200px;grid-template-rows: 150px 100px
-      100px;
-    </h1>
-
-    <div
-      style="
-        grid-template-columns: 100px auto 200px;
-        grid-template-rows: 150px 100px 100px;
-      "
-      class="container"
-    >
-      <div class="items item1">First</div>
-      <div class="items item2">Second</div>
-      <div class="items item3">Thrid</div>
-      <div class="items item4">Fourth</div>
-      <div class="items item5">Fifth</div>
-      <div class="items item6">Six</div>
-    </div>
-
-    <h1>
-      grid-template-columns: 55% 25% auto;grid-template-rows: 150px 100px 100px;
-    </h1>
-
-    <div
-      style="
-        grid-template-columns: 55% 25% auto;
-        grid-template-rows: 150px 100px 100px;
-      "
-      class="container"
-    >
-      <div class="items item1">First</div>
-      <div class="items item2">Second</div>
-      <div class="items item3">Thrid</div>
-      <div class="items item4">Fourth</div>
-      <div class="items item5">Fifth</div>
-      <div class="items item6">Six</div>
-    </div>
-
-    <h1>
-      grid-template-columns: 55% 100px auto;grid-template-rows: 150px 100px
-      100px;
-    </h1>
-
-    <div
-      style="
-        grid-template-columns: 55% 100px auto;
-        grid-template-rows: 150px 100px 100px;
-      "
-      class="container"
-    >
-      <div class="items item1">First</div>
-      <div class="items item2">Second</div>
-      <div class="items item3">Thrid</div>
-      <div class="items item4">Fourth</div>
-      <div class="items item5">Fifth</div>
-      <div class="items item6">Six</div>
-    </div>
-
-    <h1>
-      grid-template-columns: 1fr 1fr;grid-template-rows: 150px 100px 100px;
-    </h1>
-
-    <div
-      style="
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 150px 100px 100px;
-      "
-      class="container"
-    >
-      <div class="items item1">First</div>
-      <div class="items item2">Second</div>
-      <div class="items item3">Thrid</div>
-      <div class="items item4">Fourth</div>
-      <div class="items item5">Fifth</div>
-      <div class="items item6">Six</div>
-    </div>
-
-    <h1>
-      grid-template-columns: 1fr 1fr 1fr;grid-template-rows: 150px 100px 100px;
-    </h1>
-
-    <div
-      style="
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 150px 100px 100px;
-      "
-      class="container"
-    >
-      <div class="items item1">First</div>
-      <div class="items item2">Second</div>
-      <div class="items item3">Thrid</div>
-      <div class="items item4">Fourth</div>
-      <div class="items item5">Fifth</div>
-      <div class="items item6">Six</div>
-    </div>
-
-    <h1>
-      grid-template-columns: 1fr 2fr 1fr;grid-template-rows: 150px 100px 100px;
-    </h1>
-
-    <div
-      style="
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 150px 100px 100px;
-      "
-      class="container"
-    >
-      <div class="items item1">First</div>
-      <div class="items item2">Second</div>
-      <div class="items item3">Thrid</div>
-      <div class="items item4">Fourth</div>
-      <div class="items item5">Fifth</div>
-      <div class="items item6">Six</div>
-    </div>
-
-    <h1>
-      grid-template-columns: 1fr 3fr 1fr;grid-template-rows: 150px 100px 100px;
-    </h1>
-
-    <div
-      style="
-        grid-template-columns: 1fr 3fr 1fr;
-        grid-template-rows: 150px 100px 100px;
-      "
-      class="container"
-    >
-      <div class="items item1">First</div>
-      <div class="items item2">Second</div>
-      <div class="items item3">Thrid</div>
-      <div class="items item4">Fourth</div>
-      <div class="items item5">Fifth</div>
-      <div class="items item6">Six</div>
-    </div>
-
-    <h1>
-      grid-template-columns: 1fr 3fr 1fr;grid-template-rows: 150px 100px 100px
-      grid-gap: 20px;
-    </h1>
-
-    <div
-      style="
-        grid-template-columns: 1fr 3fr 1fr;
-        grid-template-rows: 150px 100px 100px;
-        grid-gap: 20px;
-      "
-      class="container"
-    >
-      <div class="items item1">First</div>
-      <div class="items item2">Second</div>
-      <div class="items item3">Thrid</div>
-      <div class="items item4">Fourth</div>
-      <div class="items item5">Fifth</div>
-      <div class="items item6">Six</div>
-    </div>
-
-    <h1>
-      grid-template-columns: repeat(2,200px);grid-template-rows: 150px 100px
-      100px grid-gap: 20px;
-    </h1>
-
-    <div
-      style="
-        grid-template-columns: repeat(2, 200px);
-        grid-template-rows: 150px 100px 100px;
-        grid-gap: 20px;
-      "
-      class="container"
-    >
-      <div class="items item1">First</div>
-      <div class="items item2">Second</div>
-      <div class="items item3">Thrid</div>
-      <div class="items item4">Fourth</div>
-      <div class="items item5">Fifth</div>
-      <div class="items item6">Six</div>
-    </div>
-
-    <h1>
-      grid-template-columns: repeat(3,200px);grid-template-rows: 150px 100px
-      100px grid-gap: 20px;
-    </h1>
-
-    <div
-      style="
-        grid-template-columns: repeat(3, 200px);
-        grid-template-rows: 150px 100px 100px;
-        grid-gap: 20px;
-      "
-      class="container"
-    >
-      <div class="items item1">First</div>
-      <div class="items item2">Second</div>
-      <div class="items item3">Thrid</div>
-      <div class="items item4">Fourth</div>
-      <div class="items item5">Fifth</div>
-      <div class="items item6">Six</div>
-    </div>
-
-    <h1>
-      grid-template-columns: repeat(2,150px) 1fr;grid-template-rows: 150px 100px
-      100px grid-gap: 20px;
-    </h1>
-
-    <div
-      style="
-        grid-template-columns: repeat(2, 150px) 1fr;
-        grid-template-rows: 150px 100px 100px;
-        grid-gap: 20px;
-      "
-      class="container"
-    >
-      <div class="items item1">First</div>
-      <div class="items item2">Second</div>
-      <div class="items item3">Thrid</div>
-      <div class="items item4">Fourth</div>
-      <div class="items item5">Fifth</div>
-      <div class="items item6">Six</div>
-    </div>
-
-    <h1>
-      grid-template-columns: repeat(2,150px) 50%;grid-template-rows: 150px 100px
-      100px grid-gap: 20px;
-    </h1>
-
-    <div
-      style="
-        grid-template-columns: repeat(2, 150px) 50%;
-        grid-template-rows: 150px 100px 100px;
-        grid-gap: 20px;
-      "
-      class="container"
-    >
-      <div class="items item1">First</div>
-      <div class="items item2">Second</div>
-      <div class="items item3">Thrid</div>
-      <div class="items item4">Fourth</div>
-      <div class="items item5">Fifth</div>
-      <div class="items item6">Six</div>
-    </div>
-
-    <h1>
-      grid-template-columns: 50% repeat(2,150px) ;grid-template-rows: 150px
-      100px 100px grid-gap: 20px;
-    </h1>
-
-    <div
-      style="
-        grid-template-columns: 50% repeat(2, 150px);
-        grid-template-rows: 150px 100px 100px;
-        grid-gap: 20px;
-      "
-      class="container"
-    >
-      <div class="items item1">First</div>
-      <div class="items item2">Second</div>
-      <div class="items item3">Thrid</div>
-      <div class="items item4">Fourth</div>
-      <div class="items item5">Fifth</div>
-      <div class="items item6">Six</div>
-    </div>
-
-    <h1>
-      grid-template-columns: 50% repeat(2,150px) ;grid-template-rows:
-      repeat(2,1fr) grid-gap: 20px; height: 800px;
-    </h1>
-
-    <div
-      style="
-        grid-template-columns: 50% repeat(2, 150px);
-        grid-template-rows: repeat(2, 1fr);
-        grid-gap: 20px;
-        height: 800px;
-      "
-      class="container"
-    >
-      <div class="items item1">First</div>
-      <div class="items item2">Second</div>
-      <div class="items item3">Thrid</div>
-      <div class="items item4">Fourth</div>
-      <div class="items item5">Fifth</div>
-      <div class="items item6">Six</div>
-    </div>
-
-    <h1>
-      grid-template-columns: 50% repeat(2,150px) ;grid-template-rows: 1fr 200px
-      grid-gap: 20px; height: 800px;
-    </h1>
-
-    <div
-      style="
-        grid-template-columns: 50% repeat(2, 150px);
-        grid-template-rows: 1fr 200px;
-        grid-gap: 20px;
-        height: 800px;
-      "
-      class="container"
-    >
-      <div class="items item1">First</div>
-      <div class="items item2">Second</div>
-      <div class="items item3">Thrid</div>
-      <div class="items item4">Fourth</div>
-      <div class="items item5">Fifth</div>
-      <div class="items item6">Six</div>
-    </div>
+   
   </body>
 </html>
