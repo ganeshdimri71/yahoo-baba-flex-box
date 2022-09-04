@@ -15,98 +15,29 @@
         width: 650px;
         margin: 50px auto 0;
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 150px);
         grid-auto-rows: 80px;
+        grid-gap: 10px;
       "
     >
-      <div style="background-color: orangered; color: white;order: 1;">One</div>
+      <div style="background-color: orangered; color: white; order: 1">One</div>
       <div style="background-color: yellowgreen; color: white">Two</div>
-      <div style="background-color: slateblue; color: white">Three</div>
+      <div
+        style="
+          background-color: slateblue;
+          color: white;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 10px;
+          padding: 10px;
+        "
+      >
+        <div style="background-color: brown;padding:10px">A</div>
+        <div style="background-color: green;padding:10px">B</div>
+        <div style="background-color: black;padding:10px">C</div>
+      </div>
       <div style="background-color: hotpink; color: white">Four</div>
-      <div style="background-color: red; color: white">Five</div>
-      <div style="background-color: purple; color: white">Six</div>
     </div>
-    <h1>Order 0</h1>
-
-    <div
-      style="
-        background-color: #eee;
-        width: 650px;
-        margin: 50px auto 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-        grid-template-rows: repeat(2, 150px);
-        grid-auto-rows: 80px;
-      "
-    >
-      <div style="background-color: orangered; color: white;order: 0;">One</div>
-      <div style="background-color: yellowgreen; color: white">Two</div>
-      <div style="background-color: slateblue; color: white">Three</div>
-      <div style="background-color: hotpink; color: white">Four</div>
-      <div style="background-color: red; color: white">Five</div>
-      <div style="background-color: purple; color: white">Six</div>
-    </div>
-    <h1>Order 0</h1>
-
-    <div
-      style="
-        background-color: #eee;
-        width: 650px;
-        margin: 50px auto 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-        grid-template-rows: repeat(2, 150px);
-        grid-auto-rows: 80px;
-      "
-    >
-      <div style="background-color: orangered; color: white;order: 2;">One</div>
-      <div style="background-color: yellowgreen; color: white">Two</div>
-      <div style="background-color: slateblue; color: white;order: 1;">Three</div>
-      <div style="background-color: hotpink; color: white">Four</div>
-      <div style="background-color: red; color: white">Five</div>
-      <div style="background-color: purple; color: white">Six</div>
-    </div>
-    <h1>Order 0</h1>
-
-    <div
-      style="
-        background-color: #eee;
-        width: 650px;
-        margin: 50px auto 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-        grid-template-rows: repeat(2, 150px);
-        grid-auto-rows: 80px;
-      "
-    >
-      <div style="background-color: orangered; color: white;order: 2;">One</div>
-      <div style="background-color: yellowgreen; color: white">Two</div>
-      <div style="background-color: slateblue; color: white;order: 1;">Three</div>
-      <div style="background-color: hotpink; color: white">Four</div>
-      <div style="background-color: red; color: white;order: 3;">Five</div>
-      <div style="background-color: purple; color: white">Six</div>
-    </div>
-    <h1>Order 0</h1>
-
-    <div
-      style="
-        background-color: #eee;
-        width: 650px;
-        margin: 50px auto 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-        grid-template-rows: repeat(2, 150px);
-        grid-auto-rows: 80px;
-      "
-    >
-      <div style="background-color: orangered; color: white;order: 2;">One</div>
-      <div style="background-color: yellowgreen; color: white;order: 4;">Two</div>
-      <div style="background-color: slateblue; color: white;order: 1;">Three</div>
-      <div style="background-color: hotpink; color: white;order: 5;">Four</div>
-      <div style="background-color: red; color: white;order: 3;">Five</div>
-      <div style="background-color: purple; color: white;order: 6;">Six</div>
-    </div>
-    
   </body>
 </html>
