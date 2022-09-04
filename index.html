@@ -5,372 +5,472 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      .container {
+  </head>
+  <body>
+    <h1>Align-Items Center</h1>
+
+    <div
+      style="
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 120px);
+        grid-gap: 5px;
+        grid-auto-rows: 70px;
         background-color: #eee;
         width: 700px;
         margin: 45px auto 0;
         display: grid;
-      }
-      .item1 {
-        background-color: orangered;
-        color: white;
-      }
-      .item2 {
-        background-color: yellowgreen;
-        color: white;
-      }
-      .item3 {
-        background-color: slateblue;
-        color: white;
-      }
-      .item4 {
-        background-color: hotpink;
-        color: white;
-      }
-      .item5 {
-        background-color: royalblue;
-        color: white;
-      }
-      .item6 {
-        background-color: goldenrod;
-        color: white;
-      }
-      .item7 {
-        background-color: pink;
-        color: white;
-      }
-      .item8 {
-        background-color: purple;
-        color: white;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>
-      grid-template-columns: repeat(3,1fr);grid-template-rows: 120px 60px 100px
-      400px; grid-row-gap: 15px;grid-column-gap: 20px;
-    </h1>
-
-    <div
-      style="
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: repeat(2, 150px);
-        grid-gap: 5px;
+        align-items: center;
       "
-      class="container"
     >
-      <div class="items item1">One</div>
-      <div class="items item2">Two</div>
-      <div class="items item3">Three</div>
-      <div class="items item4">Four</div>
-      <div class="items item5">Five</div>
-      <div class="items item6">Six</div>
-      <div class="items item7">Seven</div>
-      <div class="items item8">Eight</div>
+      <div style="background-color: orangered; color: white">One</div>
+      <div style="background-color: yellowgreen; color: white">Two</div>
+      <div style="background-color: slateblue; color: white; grid-row: span 3">
+        Three
+      </div>
+      <div style="background-color: hotpink; color: white">Four</div>
+      <div style="background-color: royalblue; color: white">Five</div>
+      <div style="background-color: goldenrod; color: white">Six</div>
+      <div style="background-color: pink; color: white; grid-column: span 2">
+        Seven
+      </div>
+      <div style="background-color: purple; color: white">Eight</div>
     </div>
-    <h1>
-      grid-template-columns: repeat(3,1fr);grid-template-rows: 120px 60px 100px
-      400px; grid-row-gap: 15px;grid-column-gap: 20px;
-    </h1>
+    <h1>Align-Items Start</h1>
 
     <div
       style="
-        grid-template-columns: max-content 1fr 1fr 1fr;
-        grid-template-rows: repeat(2, 150px);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 120px);
         grid-gap: 5px;
+        grid-auto-rows: 70px;
+        background-color: #eee;
+        width: 700px;
+        margin: 45px auto 0;
+        display: grid;
+        align-items: start;
       "
-      class="container"
     >
-      <div class="items item1">max-content</div>
-      <div class="items item2">Two</div>
-      <div class="items item3">Three</div>
-      <div class="items item4">Four</div>
-      <div class="items item5">max-content</div>
-      <div class="items item6">Six</div>
-      <div class="items item7">Seven</div>
-      <div class="items item8">Eight</div>
+      <div style="background-color: orangered; color: white">One</div>
+      <div style="background-color: yellowgreen; color: white">Two</div>
+      <div style="background-color: slateblue; color: white; grid-row: span 3">
+        Three
+      </div>
+      <div style="background-color: hotpink; color: white">Four</div>
+      <div style="background-color: royalblue; color: white">Five</div>
+      <div style="background-color: goldenrod; color: white">Six</div>
+      <div style="background-color: pink; color: white; grid-column: span 2">
+        Seven
+      </div>
+      <div style="background-color: purple; color: white">Eight</div>
     </div>
-    <h1>
-      grid-template-columns: repeat(3,1fr);grid-template-rows: 120px 60px 100px
-      400px; grid-row-gap: 15px;grid-column-gap: 20px;
-    </h1>
+    <h1>Align-Items End</h1>
 
     <div
       style="
-        grid-template-columns: max-content 1fr 1fr 1fr;
-        grid-template-rows: repeat(2, 150px);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 120px);
         grid-gap: 5px;
+        grid-auto-rows: 70px;
+        background-color: #eee;
+        width: 700px;
+        margin: 45px auto 0;
+        display: grid;
+        align-items: end;
       "
-      class="container"
     >
-      <div class="items item1">max- Lorem ipsum dolor sit amet.</div>
-      <div class="items item2">Two</div>
-      <div class="items item3">Three</div>
-      <div class="items item4">Four</div>
-      <div class="items item5">max-content Lorem ipsum dolor sit amet</div>
-      <div class="items item6">Six</div>
-      <div class="items item7">Seven</div>
-      <div class="items item8">Eight</div>
+      <div style="background-color: orangered; color: white">One</div>
+      <div style="background-color: yellowgreen; color: white">Two</div>
+      <div style="background-color: slateblue; color: white; grid-row: span 3">
+        Three
+      </div>
+      <div style="background-color: hotpink; color: white">Four</div>
+      <div style="background-color: royalblue; color: white">Five</div>
+      <div style="background-color: goldenrod; color: white">Six</div>
+      <div style="background-color: pink; color: white; grid-column: span 2">
+        Seven
+      </div>
+      <div style="background-color: purple; color: white">Eight</div>
     </div>
-    <h1>
-      grid-template-columns: repeat(3,1fr);grid-template-rows: 120px 60px 100px
-      400px; grid-row-gap: 15px;grid-column-gap: 20px;
-    </h1>
+    <h1>Align-Items strech</h1>
 
     <div
       style="
-        grid-template-columns: max-content 1fr 1fr min-content;
-        grid-template-rows: repeat(2, 150px);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 120px);
         grid-gap: 5px;
+        grid-auto-rows: 70px;
+        background-color: #eee;
+        width: 700px;
+        margin: 45px auto 0;
+        display: grid;
+        align-items: stretch;
       "
-      class="container"
     >
-      <div class="items item1">max- Lorem ipsum dolor sit amet.</div>
-      <div class="items item2">Two</div>
-      <div class="items item3">Three</div>
-      <div class="items item4">
-        min-content Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Voluptatum in, porro quia tempore blanditiis magnam!.
+      <div style="background-color: orangered; color: white">One</div>
+      <div style="background-color: yellowgreen; color: white">Two</div>
+      <div style="background-color: slateblue; color: white; grid-row: span 3">
+        Three
       </div>
-      <div class="items item5">max-content Lorem ipsum dolor sit amet</div>
-      <div class="items item6">Six</div>
-      <div class="items item7">Seven</div>
-      <div class="items item8">Eight</div>
+      <div style="background-color: hotpink; color: white">Four</div>
+      <div style="background-color: royalblue; color: white">Five</div>
+      <div style="background-color: goldenrod; color: white">Six</div>
+      <div style="background-color: pink; color: white; grid-column: span 2">
+        Seven
+      </div>
+      <div style="background-color: purple; color: white">Eight</div>
     </div>
-    <h1>
-      grid-template-columns: max-content 1fr 1fr min-content;
-      grid-template-rows: repeat(2, min-content); grid-gap: 5px
-    </h1>
+    <h1>Align-self end</h1>
 
     <div
       style="
-        grid-template-columns: max-content 1fr 1fr min-content;
-        grid-template-rows: repeat(2, min-content);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 120px);
         grid-gap: 5px;
+        grid-auto-rows: 70px;
+        background-color: #eee;
+        width: 700px;
+        margin: 45px auto 0;
+        display: grid;
+        align-items: start;
       "
-      class="container"
     >
-      <div class="items item1">max- Lorem ipsum dolor sit amet.</div>
-      <div class="items item2">Two</div>
-      <div class="items item3">Three</div>
-      <div class="items item4">
-        min-content Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Voluptatum in, porro quia tempore blanditiis magnam!.
+      <div style="background-color: orangered; color: white">One</div>
+      <div style="background-color: yellowgreen; color: white; align-self: end">
+        Two
       </div>
-      <div class="items item5">max-content Lorem ipsum dolor sit amet</div>
-      <div class="items item6">Six</div>
-      <div class="items item7">Seven</div>
-      <div class="items item8">Eight</div>
+      <div style="background-color: slateblue; color: white; grid-row: span 3">
+        Three
+      </div>
+      <div style="background-color: hotpink; color: white">Four</div>
+      <div style="background-color: royalblue; color: white">Five</div>
+      <div style="background-color: goldenrod; color: white">Six</div>
+      <div style="background-color: pink; color: white; grid-column: span 2">
+        Seven
+      </div>
+      <div style="background-color: purple; color: white">Eight</div>
     </div>
-    <h1>
-      grid-template-columns: max-content 1fr 1fr min-content;
-      grid-template-rows: repeat(2, min-content); grid-gap: 5px
-    </h1>
+    <h1>Align-self center</h1>
 
     <div
       style="
-        grid-template-columns: max-content 1fr 1fr min-content;
-        grid-template-rows: repeat(2, min-content);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 120px);
         grid-gap: 5px;
+        grid-auto-rows: 70px;
+        background-color: #eee;
+        width: 700px;
+        margin: 45px auto 0;
+        display: grid;
+        align-items: start;
       "
-      class="container"
     >
-      <div class="items item1">max- Lorem ipsum dolor sit amet.</div>
-      <div class="items item2">Two</div>
-      <div class="items item3">Three</div>
-      <div class="items item4">
-        min-content Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Voluptatum in, porro quia tempore blanditiis magnam!.
+      <div style="background-color: orangered; color: white">One</div>
+      <div
+        style="background-color: yellowgreen; color: white; align-self: center"
+      >
+        Two
       </div>
-      <div class="items item5">max-content Lorem ipsum dolor sit amet</div>
-      <div class="items item6">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis,
-        consectetur!
+      <div style="background-color: slateblue; color: white; grid-row: span 3">
+        Three
       </div>
-      <div class="items item7">Seven</div>
-      <div class="items item8">Eight</div>
+      <div style="background-color: hotpink; color: white">Four</div>
+      <div style="background-color: royalblue; color: white">Five</div>
+      <div style="background-color: goldenrod; color: white">Six</div>
+      <div style="background-color: pink; color: white; grid-column: span 2">
+        Seven
+      </div>
+      <div style="background-color: purple; color: white">Eight</div>
     </div>
-    <h1>
-      grid-template-columns: max-content 1fr 1fr min-content;
-      grid-template-rows: repeat(2, minmax(150px,min-content)); grid-gap: 5px;
-    </h1>
+    <h1>Justify-items start</h1>
 
     <div
       style="
-        grid-template-columns: max-content 1fr 1fr min-content;
-        grid-template-rows: repeat(2, minmax(150px, min-content));
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 120px);
         grid-gap: 5px;
+        grid-auto-rows: 70px;
+        background-color: #eee;
+        width: 700px;
+        margin: 45px auto 0;
+        display: grid;
+        align-items: center;
+        justify-items: start;
       "
-      class="container"
     >
-      <div class="items item1">max- Lorem ipsum dolor sit amet.</div>
-      <div class="items item2">Two</div>
-      <div class="items item3">Three</div>
-      <div class="items item4">
-        min-content Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Voluptatum in, porro quia tempore blanditiis magnam!.
+      <div style="background-color: orangered; color: white">One</div>
+      <div
+        style="background-color: yellowgreen; color: white; align-self: center"
+      >
+        Two
       </div>
-      <div class="items item5">max-content Lorem ipsum dolor sit amet</div>
-      <div class="items item6">Six</div>
-      <div class="items item7">Seven</div>
-      <div class="items item8">Eight</div>
+      <div style="background-color: slateblue; color: white; grid-row: span 3">
+        Three
+      </div>
+      <div style="background-color: hotpink; color: white">Four</div>
+      <div style="background-color: royalblue; color: white">Five</div>
+      <div style="background-color: goldenrod; color: white">Six</div>
+      <div style="background-color: pink; color: white; grid-column: span 2">
+        Seven
+      </div>
+      <div style="background-color: purple; color: white">Eight</div>
     </div>
-    <h1>
-      grid-template-columns: max-content 1fr 1fr min-content;
-      grid-template-rows: repeat(2, minmax(150px,min-content)); grid-gap: 5px;
-    </h1>
+    <h1>Justify-items center</h1>
 
     <div
       style="
-        grid-template-columns: max-content 1fr 1fr min-content;
-        grid-template-rows: repeat(2, minmax(150px, min-content));
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 120px);
         grid-gap: 5px;
+        grid-auto-rows: 70px;
+        background-color: #eee;
+        width: 700px;
+        margin: 45px auto 0;
+        display: grid;
+        align-items: center;
+        justify-items: center;
       "
-      class="container"
     >
-      <div class="items item1">max- Lorem ipsum dolor sit amet.</div>
-      <div class="items item2">Two</div>
-      <div class="items item3">Three</div>
-      <div class="items item4">
-        min-content Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Voluptatum in, porro quia tempore blanditiis magnam!.
+      <div style="background-color: orangered; color: white">One</div>
+      <div
+        style="background-color: yellowgreen; color: white; align-self: start"
+      >
+        Two
       </div>
-      <div class="items item5">max-content Lorem ipsum dolor sit amet</div>
-      <div class="items item6">
-        Six Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-        molestiae natus culpa ut quasi inventore dolorum magni dolore aliquid
-        suscipit? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Ipsam, amet?
+      <div style="background-color: slateblue; color: white; grid-row: span 3">
+        Three
       </div>
-      <div class="items item7">Seven</div>
-      <div class="items item8">Eight</div>
+      <div style="background-color: hotpink; color: white">Four</div>
+      <div style="background-color: royalblue; color: white">Five</div>
+      <div style="background-color: goldenrod; color: white">Six</div>
+      <div style="background-color: pink; color: white; grid-column: span 2">
+        Seven
+      </div>
+      <div style="background-color: purple; color: white">Eight</div>
     </div>
-    <h1>
-      grid-template-columns: max-content 1fr 1fr min-content;
-      grid-template-rows: repeat(2, minmax(150px,500px)); grid-gap: 5px;
-    </h1>
+    <h1>Justify-items End</h1>
 
     <div
       style="
-        grid-template-columns: max-content 1fr 1fr min-content;
-        grid-template-rows: repeat(2, minmax(150px, 500px));
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 120px);
         grid-gap: 5px;
+        grid-auto-rows: 70px;
+        background-color: #eee;
+        width: 700px;
+        margin: 45px auto 0;
+        display: grid;
+        align-items: center;
+        justify-items: end;
       "
-      class="container"
     >
-      <div class="items item1">max- Lorem ipsum dolor sit amet.</div>
-      <div class="items item2">Two</div>
-      <div class="items item3">Three</div>
-      <div class="items item4">
-        min-content Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Voluptatum in, porro quia tempore blanditiis magnam!.
+      <div style="background-color: orangered; color: white">One</div>
+      <div
+        style="background-color: yellowgreen; color: white; align-self: start"
+      >
+        Two
       </div>
-      <div class="items item5">max-content Lorem ipsum dolor sit amet</div>
-      <div class="items item6">
-        Six Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-        molestiae natus culpa ut quasi inventore dolorum magni dolore aliquid
-        suscipit? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Ipsam, amet? lorem300
+      <div style="background-color: slateblue; color: white; grid-row: span 3">
+        Three
       </div>
-      <div class="items item7">Seven</div>
-      <div class="items item8">Eight</div>
+      <div style="background-color: hotpink; color: white">Four</div>
+      <div style="background-color: royalblue; color: white">Five</div>
+      <div style="background-color: goldenrod; color: white">Six</div>
+      <div style="background-color: pink; color: white; grid-column: span 2">
+        Seven
+      </div>
+      <div style="background-color: purple; color: white">Eight</div>
     </div>
-    <h1>
-      grid-template-columns: max-content 1fr 1fr min-content;
-      grid-template-columns: minmax(150px,300px) 1fr 1fr min-content;
-      grid-template-rows: repeat(2, minmax(150px,min-content)); grid-gap: 5px;
-    </h1>
+    <h1>Justify-items stretch</h1>
 
     <div
       style="
-        grid-template-columns: minmax(150px, 300px) 1fr 1fr min-content;
-        grid-template-rows: repeat(2, minmax(150px, min-content));
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 120px);
         grid-gap: 5px;
-        width: 80%;
+        grid-auto-rows: 70px;
+        background-color: #eee;
+        width: 700px;
+        margin: 45px auto 0;
+        display: grid;
+        align-items: center;
+        justify-items: stretch;
       "
-      class="container"
     >
-      <div class="items item1">max- Lorem ipsum dolor sit amet.</div>
-      <div class="items item2">Two</div>
-      <div class="items item3">Three</div>
-      <div class="items item4">
-        min-content Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Voluptatum in, porro quia tempore blanditiis magnam!.
+      <div style="background-color: orangered; color: white">One</div>
+      <div
+        style="background-color: yellowgreen; color: white; align-self: start"
+      >
+        Two
       </div>
-      <div class="items item5">max-content Lorem ipsum dolor sit amet</div>
-      <div class="items item6">
-        Six Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-        molestiae natus culpa ut quasi inventore dolorum magni dolore aliquid
-        suscipit? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Ipsam, amet? lorem300
+      <div style="background-color: slateblue; color: white; grid-row: span 3">
+        Three
       </div>
-      <div class="items item7">Seven</div>
-      <div class="items item8">Eight</div>
+      <div style="background-color: hotpink; color: white">Four</div>
+      <div style="background-color: royalblue; color: white">Five</div>
+      <div style="background-color: goldenrod; color: white">Six</div>
+      <div style="background-color: pink; color: white; grid-column: span 2">
+        Seven
+      </div>
+      <div style="background-color: purple; color: white">Eight</div>
     </div>
-    <h1>
-      grid-template-columns: max-content 1fr 1fr min-content;
-      grid-template-columns: minmax(150px,300px) 1fr 1fr min-content;
-      grid-template-rows: repeat(2, minmax(150px,min-content)); grid-gap: 5px;
-    </h1>
+    <h1>Justify-self end</h1>
 
     <div
       style="
-        grid-template-columns: minmax(150px, 50%) 1fr 1fr min-content;
-        grid-template-rows: repeat(2, minmax(150px, min-content));
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 120px);
         grid-gap: 5px;
-        width: 80%;
+        grid-auto-rows: 70px;
+        background-color: #eee;
+        width: 700px;
+        margin: 45px auto 0;
+        display: grid;
+        align-items: center;
+        justify-items: start;
       "
-      class="container"
     >
-      <div class="items item1">max- Lorem ipsum dolor sit amet.</div>
-      <div class="items item2">Two</div>
-      <div class="items item3">Three</div>
-      <div class="items item4">
-        min-content Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Voluptatum in, porro quia tempore blanditiis magnam!.
+      <div style="background-color: orangered; color: white">One</div>
+      <div
+        style="
+          background-color: yellowgreen;
+          color: white;
+          align-self: start;
+          justify-self: end;
+        "
+      >
+        Two
       </div>
-      <div class="items item5">max-content Lorem ipsum dolor sit amet</div>
-      <div class="items item6">
-        Six Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-        molestiae natus culpa ut quasi inventore dolorum magni dolore aliquid
-        suscipit? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Ipsam, amet? lorem300
+      <div style="background-color: slateblue; color: white; grid-row: span 3">
+        Three
       </div>
-      <div class="items item7">Seven</div>
-      <div class="items item8">Eight</div>
+      <div style="background-color: hotpink; color: white">Four</div>
+      <div style="background-color: royalblue; color: white">Five</div>
+      <div style="background-color: goldenrod; color: white">Six</div>
+      <div style="background-color: pink; color: white; grid-column: span 2">
+        Seven
+      </div>
+      <div style="background-color: purple; color: white">Eight</div>
     </div>
-    <h1>
-      grid-template-columns: minmax(150px, 1fr) 1fr 1fr min-content;
-      grid-template-columns: minmax(150px,300px) 1fr 1fr min-content;
-      grid-template-rows: repeat(2, minmax(150px,min-content)); grid-gap: 5px;
-    </h1>
+    <h1>Justify-items stretch</h1>
 
     <div
       style="
-        grid-template-columns: minmax(150px, 1fr) 1fr 1fr min-content;
-        grid-template-rows: repeat(2, minmax(150px, min-content));
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 120px);
         grid-gap: 5px;
-        width: 80%;
+        grid-auto-rows: 70px;
+        background-color: #eee;
+        width: 700px;
+        margin: 45px auto 0;
+        display: grid;
+        align-items: center;
+        justify-items: stretch;
       "
-      class="container"
     >
-      <div class="items item1">max- Lorem ipsum dolor sit amet.</div>
-      <div class="items item2">Two</div>
-      <div class="items item3">Three</div>
-      <div class="items item4">
-        min-content Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Voluptatum in, porro quia tempore blanditiis magnam!.
+      <div style="background-color: orangered; color: white">One</div>
+      <div
+        style="background-color: yellowgreen; color: white; align-self: start"
+      >
+        Two
       </div>
-      <div class="items item5">max-content Lorem ipsum dolor sit amet</div>
-      <div class="items item6">
-        Six Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-        molestiae natus culpa ut quasi inventore dolorum magni dolore aliquid
-        suscipit? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Ipsam, amet? lorem300
+      <div style="background-color: slateblue; color: white; grid-row: span 3">
+        Three
       </div>
-      <div class="items item7">Seven</div>
-      <div class="items item8">Eight</div>
+      <div style="background-color: hotpink; color: white">Four</div>
+      <div style="background-color: royalblue; color: white">Five</div>
+      <div style="background-color: goldenrod; color: white">Six</div>
+      <div style="background-color: pink; color: white; grid-column: span 2">
+        Seven
+      </div>
+      <div style="background-color: purple; color: white">Eight</div>
+    </div>
+    <h1>Justify-self end</h1>
+
+    <div
+      style="
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 120px);
+        grid-gap: 5px;
+        grid-auto-rows: 70px;
+        background-color: #eee;
+        width: 700px;
+        margin: 45px auto 0;
+        display: grid;
+        align-items: center;
+        justify-items: start;
+      "
+    >
+      <div style="background-color: orangered; color: white">One</div>
+      <div
+        style="
+          background-color: yellowgreen;
+          color: white;
+          align-self: start;
+          justify-self: end;
+        "
+      >
+        Two
+      </div>
+      <div style="background-color: slateblue; color: white; grid-row: span 3">
+        Three
+      </div>
+      <div style="background-color: hotpink; color: white">Four</div>
+      <div style="background-color: royalblue; color: white">Five</div>
+      <div style="background-color: goldenrod; color: white">Six</div>
+      <div
+        style="
+          background-color: pink;
+          color: white;
+          grid-column: span 2;
+          justify-self: center;
+        "
+      >
+        Seven
+      </div>
+      <div style="background-color: purple; color: white">Eight</div>
+    </div>
+    <h1>Place-self</h1>
+
+    <div
+      style="
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 120px);
+        grid-gap: 5px;
+        grid-auto-rows: 70px;
+        background-color: #eee;
+        width: 700px;
+        margin: 45px auto 0;
+        display: grid;
+        place-items: center center;
+      "
+    >
+      <div style="background-color: orangered; color: white">One</div>
+      <div
+        style="
+          background-color: yellowgreen;
+          color: white;
+          place-self: start end;
+        "
+      >
+        Two
+      </div>
+      <div style="background-color: slateblue; color: white; grid-row: span 3">
+        Three
+      </div>
+      <div style="background-color: hotpink; color: white">Four</div>
+      <div style="background-color: royalblue; color: white">Five</div>
+      <div style="background-color: goldenrod; color: white">Six</div>
+      <div
+        style="
+          background-color: pink;
+          color: white;
+          grid-column: span 2;
+          justify-self: center;
+        "
+      >
+        Seven
+      </div>
+      <div style="background-color: purple; color: white">Eight</div>
     </div>
   </body>
 </html>
