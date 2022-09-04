@@ -17,3 +17,4 @@ eb56253 : margin-auto
 bb30067 : grid gap
 f522635 : grid area
 da82c4a : spanning
+cce969b : basic grid structure
