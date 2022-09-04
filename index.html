@@ -7,19 +7,20 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Align-Items Center</h1>
+    <h1>justify-content: center;</h1>
 
     <div
       style="
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 120px);
-        grid-gap: 5px;
-        grid-auto-rows: 70px;
         background-color: #eee;
         width: 700px;
+        height: 700px;
         margin: 45px auto 0;
         display: grid;
-        align-items: center;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 100px);
+        grid-gap: 15px;
+        grid-auto-rows: 50px;
+        justify-content: center;
       "
     >
       <div style="background-color: orangered; color: white">One</div>
@@ -35,19 +36,20 @@
       </div>
       <div style="background-color: purple; color: white">Eight</div>
     </div>
-    <h1>Align-Items Start</h1>
+    <h1>justify-content: end;</h1>
 
     <div
       style="
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 120px);
-        grid-gap: 5px;
-        grid-auto-rows: 70px;
         background-color: #eee;
         width: 700px;
+        height: 700px;
         margin: 45px auto 0;
         display: grid;
-        align-items: start;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 100px);
+        grid-gap: 15px;
+        grid-auto-rows: 50px;
+        justify-content: end;
       "
     >
       <div style="background-color: orangered; color: white">One</div>
@@ -63,19 +65,20 @@
       </div>
       <div style="background-color: purple; color: white">Eight</div>
     </div>
-    <h1>Align-Items End</h1>
+    <h1>justify-content: Strat;</h1>
 
     <div
       style="
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 120px);
-        grid-gap: 5px;
-        grid-auto-rows: 70px;
         background-color: #eee;
         width: 700px;
+        height: 700px;
         margin: 45px auto 0;
         display: grid;
-        align-items: end;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 100px);
+        grid-gap: 15px;
+        grid-auto-rows: 50px;
+        justify-content: start;
       "
     >
       <div style="background-color: orangered; color: white">One</div>
@@ -91,19 +94,20 @@
       </div>
       <div style="background-color: purple; color: white">Eight</div>
     </div>
-    <h1>Align-Items strech</h1>
+    <h1>justify-content: space-between;</h1>
 
     <div
       style="
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 120px);
-        grid-gap: 5px;
-        grid-auto-rows: 70px;
         background-color: #eee;
         width: 700px;
+        height: 700px;
         margin: 45px auto 0;
         display: grid;
-        align-items: stretch;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 100px);
+        grid-gap: 15px;
+        grid-auto-rows: 50px;
+        justify-content: space-between;
       "
     >
       <div style="background-color: orangered; color: white">One</div>
@@ -119,25 +123,24 @@
       </div>
       <div style="background-color: purple; color: white">Eight</div>
     </div>
-    <h1>Align-self end</h1>
+    <h1>justify-content: space-around;</h1>
 
     <div
       style="
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 120px);
-        grid-gap: 5px;
-        grid-auto-rows: 70px;
         background-color: #eee;
         width: 700px;
+        height: 700px;
         margin: 45px auto 0;
         display: grid;
-        align-items: start;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 100px);
+        grid-gap: 15px;
+        grid-auto-rows: 50px;
+        justify-content: space-around;
       "
     >
       <div style="background-color: orangered; color: white">One</div>
-      <div style="background-color: yellowgreen; color: white; align-self: end">
-        Two
-      </div>
+      <div style="background-color: yellowgreen; color: white">Two</div>
       <div style="background-color: slateblue; color: white; grid-row: span 3">
         Three
       </div>
@@ -149,27 +152,24 @@
       </div>
       <div style="background-color: purple; color: white">Eight</div>
     </div>
-    <h1>Align-self center</h1>
+    <h1>justify-content: space-evenly;</h1>
 
     <div
       style="
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 120px);
-        grid-gap: 5px;
-        grid-auto-rows: 70px;
         background-color: #eee;
         width: 700px;
+        height: 700px;
         margin: 45px auto 0;
         display: grid;
-        align-items: start;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 100px);
+        grid-gap: 15px;
+        grid-auto-rows: 50px;
+        justify-content: space-evenly;
       "
     >
       <div style="background-color: orangered; color: white">One</div>
-      <div
-        style="background-color: yellowgreen; color: white; align-self: center"
-      >
-        Two
-      </div>
+      <div style="background-color: yellowgreen; color: white">Two</div>
       <div style="background-color: slateblue; color: white; grid-row: span 3">
         Three
       </div>
@@ -181,28 +181,25 @@
       </div>
       <div style="background-color: purple; color: white">Eight</div>
     </div>
-    <h1>Justify-items start</h1>
+    <h1>justify-content: space-evenly; align-content: center;</h1>
 
     <div
       style="
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 120px);
-        grid-gap: 5px;
-        grid-auto-rows: 70px;
         background-color: #eee;
         width: 700px;
+        height: 700px;
         margin: 45px auto 0;
         display: grid;
-        align-items: center;
-        justify-items: start;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 100px);
+        grid-gap: 15px;
+        grid-auto-rows: 50px;
+        justify-content: space-evenly;
+        align-content: center;
       "
     >
       <div style="background-color: orangered; color: white">One</div>
-      <div
-        style="background-color: yellowgreen; color: white; align-self: center"
-      >
-        Two
-      </div>
+      <div style="background-color: yellowgreen; color: white">Two</div>
       <div style="background-color: slateblue; color: white; grid-row: span 3">
         Three
       </div>
@@ -214,28 +211,25 @@
       </div>
       <div style="background-color: purple; color: white">Eight</div>
     </div>
-    <h1>Justify-items center</h1>
+    <h1>justify-content: space-evenly; align-content: end;</h1>
 
     <div
       style="
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 120px);
-        grid-gap: 5px;
-        grid-auto-rows: 70px;
         background-color: #eee;
         width: 700px;
+        height: 700px;
         margin: 45px auto 0;
         display: grid;
-        align-items: center;
-        justify-items: center;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 100px);
+        grid-gap: 15px;
+        grid-auto-rows: 50px;
+        justify-content: space-evenly;
+        align-content: end;
       "
     >
       <div style="background-color: orangered; color: white">One</div>
-      <div
-        style="background-color: yellowgreen; color: white; align-self: start"
-      >
-        Two
-      </div>
+      <div style="background-color: yellowgreen; color: white">Two</div>
       <div style="background-color: slateblue; color: white; grid-row: span 3">
         Three
       </div>
@@ -247,28 +241,25 @@
       </div>
       <div style="background-color: purple; color: white">Eight</div>
     </div>
-    <h1>Justify-items End</h1>
+    <h1>justify-content: space-evenly; align-content: space-between;;</h1>
 
     <div
       style="
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 120px);
-        grid-gap: 5px;
-        grid-auto-rows: 70px;
         background-color: #eee;
         width: 700px;
+        height: 700px;
         margin: 45px auto 0;
         display: grid;
-        align-items: center;
-        justify-items: end;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 100px);
+        grid-gap: 15px;
+        grid-auto-rows: 50px;
+        justify-content: space-evenly;
+        align-content: space-between;
       "
     >
       <div style="background-color: orangered; color: white">One</div>
-      <div
-        style="background-color: yellowgreen; color: white; align-self: start"
-      >
-        Two
-      </div>
+      <div style="background-color: yellowgreen; color: white">Two</div>
       <div style="background-color: slateblue; color: white; grid-row: span 3">
         Three
       </div>
@@ -280,28 +271,25 @@
       </div>
       <div style="background-color: purple; color: white">Eight</div>
     </div>
-    <h1>Justify-items stretch</h1>
+    <h1>justify-content: space-evenly; align-content: space-around;;</h1>
 
     <div
       style="
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 120px);
-        grid-gap: 5px;
-        grid-auto-rows: 70px;
         background-color: #eee;
         width: 700px;
+        height: 700px;
         margin: 45px auto 0;
         display: grid;
-        align-items: center;
-        justify-items: stretch;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 100px);
+        grid-gap: 15px;
+        grid-auto-rows: 50px;
+        justify-content: space-evenly;
+        align-content: space-around;
       "
     >
       <div style="background-color: orangered; color: white">One</div>
-      <div
-        style="background-color: yellowgreen; color: white; align-self: start"
-      >
-        Two
-      </div>
+      <div style="background-color: yellowgreen; color: white">Two</div>
       <div style="background-color: slateblue; color: white; grid-row: span 3">
         Three
       </div>
@@ -313,33 +301,25 @@
       </div>
       <div style="background-color: purple; color: white">Eight</div>
     </div>
-    <h1>Justify-self end</h1>
+    <h1>justify-content: space-evenly; align-content: space-evenly;;</h1>
 
     <div
       style="
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 120px);
-        grid-gap: 5px;
-        grid-auto-rows: 70px;
         background-color: #eee;
         width: 700px;
+        height: 700px;
         margin: 45px auto 0;
         display: grid;
-        align-items: center;
-        justify-items: start;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 100px);
+        grid-gap: 15px;
+        grid-auto-rows: 50px;
+        justify-content: space-evenly;
+        align-content: space-evenly;
       "
     >
       <div style="background-color: orangered; color: white">One</div>
-      <div
-        style="
-          background-color: yellowgreen;
-          color: white;
-          align-self: start;
-          justify-self: end;
-        "
-      >
-        Two
-      </div>
+      <div style="background-color: yellowgreen; color: white">Two</div>
       <div style="background-color: slateblue; color: white; grid-row: span 3">
         Three
       </div>
@@ -351,125 +331,129 @@
       </div>
       <div style="background-color: purple; color: white">Eight</div>
     </div>
-    <h1>Justify-items stretch</h1>
+    <h1>justify-content: space-evenly; align-content: space-evenly;;</h1>
 
     <div
       style="
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 120px);
-        grid-gap: 5px;
-        grid-auto-rows: 70px;
         background-color: #eee;
         width: 700px;
+        height: 700px;
         margin: 45px auto 0;
         display: grid;
-        align-items: center;
-        justify-items: stretch;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 100px);
+        grid-gap: 15px;
+        grid-auto-rows: 50px;
+        justify-content: space-evenly;
+        align-content: space-evenly;
       "
     >
       <div style="background-color: orangered; color: white">One</div>
-      <div
-        style="background-color: yellowgreen; color: white; align-self: start"
-      >
-        Two
-      </div>
+      <div style="background-color: yellowgreen; color: white">Two</div>
       <div style="background-color: slateblue; color: white; grid-row: span 3">
         Three
       </div>
       <div style="background-color: hotpink; color: white">Four</div>
       <div style="background-color: royalblue; color: white">Five</div>
-      <div style="background-color: goldenrod; color: white">Six</div>
-      <div style="background-color: pink; color: white; grid-column: span 2">
+      <div style="background-color: goldenrod; color: white;grid-column: span 2">Six</div>
+      <div style="background-color: pink; color: white; ">
         Seven
       </div>
       <div style="background-color: purple; color: white">Eight</div>
     </div>
-    <h1>Justify-self end</h1>
+    <h1>justify-content: space-evenly; align-content: space-evenly;;</h1>
 
     <div
       style="
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 120px);
-        grid-gap: 5px;
-        grid-auto-rows: 70px;
         background-color: #eee;
         width: 700px;
+        height: 700px;
         margin: 45px auto 0;
         display: grid;
-        align-items: center;
-        justify-items: start;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 100px);
+        grid-gap: 15px;
+        grid-auto-rows: 50px;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        grid-auto-flow: row dense;
       "
     >
       <div style="background-color: orangered; color: white">One</div>
-      <div
-        style="
-          background-color: yellowgreen;
-          color: white;
-          align-self: start;
-          justify-self: end;
-        "
-      >
-        Two
-      </div>
+      <div style="background-color: yellowgreen; color: white">Two</div>
       <div style="background-color: slateblue; color: white; grid-row: span 3">
         Three
       </div>
       <div style="background-color: hotpink; color: white">Four</div>
       <div style="background-color: royalblue; color: white">Five</div>
-      <div style="background-color: goldenrod; color: white">Six</div>
-      <div
-        style="
-          background-color: pink;
-          color: white;
-          grid-column: span 2;
-          justify-self: center;
-        "
-      >
+      <div style="background-color: goldenrod; color: white;grid-column: span 2">Six</div>
+      <div style="background-color: pink; color: white; ">
         Seven
       </div>
       <div style="background-color: purple; color: white">Eight</div>
     </div>
-    <h1>Place-self</h1>
+    <h1>justify-content: space-evenly; align-content: space-evenly;;</h1>
 
     <div
       style="
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 120px);
-        grid-gap: 5px;
-        grid-auto-rows: 70px;
         background-color: #eee;
         width: 700px;
+        height: 700px;
         margin: 45px auto 0;
         display: grid;
-        place-items: center center;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 100px);
+        grid-gap: 15px;
+        grid-auto-rows: 50px;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        grid-auto-flow: row dense;
       "
     >
       <div style="background-color: orangered; color: white">One</div>
-      <div
-        style="
-          background-color: yellowgreen;
-          color: white;
-          place-self: start end;
-        "
-      >
-        Two
-      </div>
+      <div style="background-color: yellowgreen; color: white">Two</div>
       <div style="background-color: slateblue; color: white; grid-row: span 3">
         Three
       </div>
       <div style="background-color: hotpink; color: white">Four</div>
       <div style="background-color: royalblue; color: white">Five</div>
-      <div style="background-color: goldenrod; color: white">Six</div>
-      <div
-        style="
-          background-color: pink;
-          color: white;
-          grid-column: span 2;
-          justify-self: center;
-        "
-      >
+      <div style="background-color: goldenrod; color: white;grid-column: span 2">Six</div>
+      <div style="background-color: pink; color: white; ">
         Seven
       </div>
+      <div style="background-color: purple; color: white">Eight</div>
+      <div style="background-color: purple; color: white">Eight</div>
+    </div>
+    <h1>justify-content: space-evenly; align-content: space-evenly;;</h1>
+
+    <div
+      style="
+        background-color: #eee;
+        width: 700px;
+        height: 700px;
+        margin: 45px auto 0;
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 100px);
+        grid-gap: 15px;
+        grid-auto-rows: 50px;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        grid-auto-flow: column dense;
+      "
+    >
+      <div style="background-color: orangered; color: white">One</div>
+      <div style="background-color: yellowgreen; color: white">Two</div>
+      <div style="background-color: slateblue; color: white; grid-row: span 3">
+        Three
+      </div>
+      <div style="background-color: hotpink; color: white">Four</div>
+      <div style="background-color: royalblue; color: white">Five</div>
+      <div style="background-color: goldenrod; color: white;grid-column: span 2">Six</div>
+      <div style="background-color: pink; color: white; ">
+        Seven
+      </div>
+      <div style="background-color: purple; color: white">Eight</div>
       <div style="background-color: purple; color: white">Eight</div>
     </div>
   </body>
