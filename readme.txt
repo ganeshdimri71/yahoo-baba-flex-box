@@ -15,3 +15,4 @@ eb56253 : margin-auto
 0a77674 : responsive-website
 9486bd4 : grid template rows and grid template column
 bb30067 : grid gap
+f522635 : grid area
