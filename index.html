@@ -11,7 +11,26 @@
         width: 700px;
         margin: 45px auto 0;
         display: grid;
+        grid-template-areas:
+          "header header header"
+          "menu menu menu"
+          "box1 box2 sidebar"
+          "content content sidebar"
+          "footer footer footer"
+        /* grid-template-areas:
+          "header header ."
+          "menu menu menu"
+          "box1 box2 sidebar"
+          "content content sidebar"
+          "footer footer footer" */
+        /* grid-template-areas:
+          "header . ."
+          "menu menu menu"
+          "box1 box2 sidebar"
+          "content content sidebar"
+          "footer footer footer" */
       }
+
       .item1 {
         background-color: orangered;
         color: white;
@@ -39,18 +58,32 @@
     </style>
   </head>
   <body>
-    <h1>grid-template-columns: repeat(3,1fr);grid-template-rows: 120px 60px 100px 400px; grid-row-gap: 15px;grid-column-gap: 20px;</h1>
+    <h1>
+      grid-template-columns: repeat(3,1fr);grid-template-rows: 120px 60px 100px
+      400px; grid-row-gap: 15px;grid-column-gap: 20px;
+    </h1>
 
-    <div style="grid-template-columns: repeat(3,[col-start]1fr[col-end]);grid-template-rows: [header-start]120px[header-end menu-start] 60px[menu-end box-start] 100px[box-end content-start] 400px[content-end footer-start] 50px[footer-end]; grid-row-gap: 15px;grid-column-gap: 20px;" class="container">
-      <div class="items item1"style="grid-row: header-start/header-end;grid-column: col-start 1/col-end 3;"">gr:1/2gc1/-1</div>
-      <div class="items item2"style="grid-row: menu-start/menu-end;grid-column: col-start 1/col-end 3;">Menu</div>
-      <div class="items item3">Box1</div>
-      <div class="items item4">Box2</div>
-      <div class="items item5" style="grid-row: box-start/content-end;">gr3/5</div>
-      <div class="items item6" style="grid-row: content-start/content-end;grid-column: col-start 1/col-end 2;">gr:4/5gc:1/3</div>
-      <div class="items item6" style="grid-row: footer-start/footer-end;grid-column: col-start 1/col-end 3;">gr:5/6;gc:1/-1;</div>
+    <div
+      style="
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 120px 60px 100px 400px 50px;
+        grid-row-gap: 15px;
+        grid-column-gap: 20px; grid-template-areas:
+          "header header header"
+          "menu menu menu"
+          "box1 box2 sidebar"
+          "content content sidebar"
+          "footer footer footer";
+      "
+      class="container"
+    >
+      <div class="items item1" style="grid-area: header">gr:1/2gc1/-1</div>
+      <div class="items item2" style="grid-area: menu">Menu</div>
+      <div class="items item3" style="grid-area: box1">Box1</div>
+      <div class="items item4" style="grid-area: box2">Box2</div>
+      <div class="items item5" style="grid-area: sidebar">gr3/5</div>
+      <div class="items item6" style="grid-area: content">gr:4/5gc:1/3</div>
+      <div class="items item6" style="grid-area: footer">gr:5/6;gc:1/-1;</div>
     </div>
-   
-   
   </body>
 </html>
